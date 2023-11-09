@@ -30,7 +30,7 @@ export default function Providers({ allProviders, zones, zipcode, my_city, provi
     };
 
     async function fetchData() {
-      const response = await fetch('https://cblproject.cablemovers.net/graphql', {
+      const response = await fetch('https://topproviders.mufaqar.com/graphql', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
