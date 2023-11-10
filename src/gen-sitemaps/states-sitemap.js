@@ -19,7 +19,7 @@ const query = `
 `;
 
 
-const SITE_URI = 'https://cablemovers.net';
+const SITE_URI = 'https://topproviders.net';
 
 async function fetchStates() {
   const resultUrls = [];

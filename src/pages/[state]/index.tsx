@@ -88,7 +88,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
 
 
       <PageHead title={`Best ${totalProviderCount} ${formatType(type)}  Service Providers in  ${C_State} | ${currentMonthName}, ${currentYear}. `} description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in  ${C_State}  for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 5).map((item: any, idx: number) => (
-        `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.cablemovers.net/${state}`} />
+        `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.topproviders.net/${state}`} />
 
 
       <section className="min-h-[40vh]  flex items-center bg-gray-50">
@@ -452,7 +452,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   // const All_zones_list = resultString.replace(/["\[\]]/g, '');
 
 
-  const response_city = await fetch(`https://cblproject.cablemovers.net/wp-json/custom/v1/area-zones?state=${state}`);
+  const response_city = await fetch(`https://cblproject.topproviders.net/wp-json/custom/v1/area-zones?state=${state}`);
   const providers_city_data = await response_city.json();
 
   const zoneTitlesQ = providers_city_data?.map((zone: any) => zone.title);
@@ -462,7 +462,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const postData = {
     internet_services: All_zones_listQ
   };
-  const response_data = await fetch('https://cblproject.cablemovers.net/wp-json/custom/v1/providers', {
+  const response_data = await fetch('https://cblproject.topproviders.net/wp-json/custom/v1/providers', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

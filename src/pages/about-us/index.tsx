@@ -7,7 +7,7 @@ function About_Us() {
     return (
         <>
           
-            <PageHead title="About Us | Cable Movers" description="Here at Cable Movers, we make it easy to search, compare and order Internet and TV service providers. Call 833-592-0098 to learn more." url="https://www.cablemovers.net/about-us" />
+            <PageHead title="About Us | Top Providers" description="Here at Top Providers, we make it easy to search, compare and order Internet and TV service providers. Call 833-592-0098 to learn more." url="https://www.topproviders.net/about-us" />
       
             <PageBanner title="About Us" />
             <section className="py-16">
@@ -17,7 +17,7 @@ function About_Us() {
                             What We Do
                         </h2>
                         <p className='text-xl font-normal my-4'>
-                            The abundance of internet, TV, and bundle options can be overwhelming. Our aim is to simplify your decision-making process. At cablemovers.net, we provide a one stop solution for internet and TV providers, whether you're seeking bundle comparisons or determining the ideal speeds for your daily online activities.
+                            The abundance of internet, TV, and bundle options can be overwhelming. Our aim is to simplify your decision-making process. At topproviders.net, we provide a one stop solution for internet and TV providers, whether you're seeking bundle comparisons or determining the ideal speeds for your daily online activities.
                             We are here to assist you in comparing internet and TV providers within your locality, ensuring that you're well-informed before making a financial commitment
                         </p>
                     </div>

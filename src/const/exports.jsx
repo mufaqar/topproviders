@@ -20,7 +20,7 @@ export const Services_data = [
     link: '#',
   },
   {
-    name: 'CABLE MOVERS',
+    name: 'Top Providers',
     link: '#',
   },
 ];

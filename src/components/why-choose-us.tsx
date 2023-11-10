@@ -7,10 +7,10 @@ const Why_ChooseUs = () => {
             <div className="container mx-auto px-4">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className='text-center md:text-4xl text-2xl font-bold'>
-                        Why Choose Cable Movers?
+                        Why Choose Top Providers?
                     </h2>
                     <p className='text-xl font-normal my-4'>
-                        Finding Internet and TV service providers is complex and time consuming but cable movers make the search process so easy and simple that saves you time and money. Here’s why you should shop with us.
+                        Finding Internet and TV service providers is complex and time consuming but Top Providers make the search process so easy and simple that saves you time and money. Here’s why you should shop with us.
                     </p>
                 </div>
                 <div className="mt-8 grid md:grid-cols-2 grid-cols-1 gap-7">
@@ -20,7 +20,7 @@ const Why_ChooseUs = () => {
                             Convenience
                         </h2>
                         <p className="mt-1 text-base">
-                            Cable Movers can simplify the task of setting up your Internet or TV service. Instead of searching individual provider sites do all your research, compare plans and order service all on one site.
+                            Top Providers can simplify the task of setting up your Internet or TV service. Instead of searching individual provider sites do all your research, compare plans and order service all on one site.
                         </p>
                     </div>
                     <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
@@ -29,7 +29,7 @@ const Why_ChooseUs = () => {
                             Time Savings
                         </h2>
                         <p className="mt-1 text-base">
-                            Cable Movers can help you save time. Enter your zip code once and compare all options available at your address.
+                            Top Providers can help you save time. Enter your zip code once and compare all options available at your address.
                         </p>
                     </div>
                     <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
@@ -38,7 +38,7 @@ const Why_ChooseUs = () => {
                             Cost Savings
                         </h2>
                         <p className="mt-1 text-base">
-                            Instead of tracking offers from multiple provider websites, compare current prices in real time at Cable Movers and get the best deal that fit your budget.
+                            Instead of tracking offers from multiple provider websites, compare current prices in real time at Top Providers and get the best deal that fit your budget.
                         </p>
                     </div>
                     <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">

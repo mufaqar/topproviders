@@ -13,11 +13,11 @@ const Footer = () => {
             <Image src="/logo.png" alt="logo.svg" height={56} width={254} />
           </Link>
           <p className='text-sm font-normal text-white/75 mt-5'>
-            All names, logos, trademarks displayed are the sole property of their respective owners; cablemovers.net employs these trademarks solely for the purpose of describing the products and services provided by each respective trademark holder. We offer information for comparative purposes and do not directly provide internet and TV services, nor do we endorse one service provider over another. We are financially supported by compensation from our internet and TV partners.
+            All names, logos, trademarks displayed are the sole property of their respective owners; topproviders.net employs these trademarks solely for the purpose of describing the products and services provided by each respective trademark holder. We offer information for comparative purposes and do not directly provide internet and TV services, nor do we endorse one service provider over another. We are financially supported by compensation from our internet and TV partners.
           </p>
           <ul className='flex gap-5 mt-5'>
             <li>
-              <Link href="https://www.facebook.com/cablemovers.net" className='text-white/75 hover:text-white text-2xl'>
+              <Link href="https://www.facebook.com/topproviders.net" className='text-white/75 hover:text-white text-2xl'>
                 <BiLogoFacebookCircle />
               </Link>
             </li>
@@ -66,7 +66,7 @@ const Footer = () => {
       </div>
       <div className='container mx-auto px-4 mt-12 pt-4 border-t border-white/20'>
         <p className='text-sm font-normal text-white/75'>
-          Copyright © 2023 Cablemovers.net. All rights reserved.
+          Copyright © 2023 topproviders.net. All rights reserved.
         </p>
       </div>
     </footer>

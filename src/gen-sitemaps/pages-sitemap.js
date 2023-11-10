@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const SITE_URI = 'https://cablemovers.net';
+const SITE_URI = 'https://topproviders.net';
 
 function getCurrentDateInISO8601Format() {
   const now = new Date();

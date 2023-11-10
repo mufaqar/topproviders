@@ -86,7 +86,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
         <>
 
         <PageHead title={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city} , ${state} `} description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city}, ${state} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
-                `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.cablemovers.net/${state_code}/${city_code}?zipcode=${zipcode}&type=${type}`} />
+                `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.topproviders.net/${state_code}/${city_code}?zipcode=${zipcode}&type=${type}`} />
 
             <section className="min-h-[40vh]  flex items-center bg-gray-50">
                 <div className="container mx-auto px-4">

@@ -13,7 +13,7 @@ function TVProviders({ allProviders }: any) {
     return (
         <>
             <Head>
-                <title>All Providers - Cable Movers</title>
+                <title>All Providers - Top Providers</title>
                 <meta name="description" content="Find Internet & TV Service Providers In Your Area" />
             </Head>
 

@@ -55,7 +55,7 @@ export default function SProviders({ Provider, city, state }: any) {
 
   return (
     <>
-      <PageHead title={`${provider_name} Plans and Pricing for ${currentMonthName}, ${currentYear} | Cable Movers`} description={`${provider_name} Plans and Pricing for ${currentMonthName}, ${currentYear}.`} url={`https://www.cablemovers.net/providers/${Provider.slug}`} />
+      <PageHead title={`${provider_name} Plans and Pricing for ${currentMonthName}, ${currentYear} | Top Providers`} description={`${provider_name} Plans and Pricing for ${currentMonthName}, ${currentYear}.`} url={`https://www.topproviders.net/providers/${Provider.slug}`} />
 
       <section className='relative'>
         <div className="container mx-auto px-4 flex md:flex-row flex-col gap-7 items-center">

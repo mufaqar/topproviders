@@ -5,9 +5,9 @@ const NotFound = () => {
   return (
     <>
       <PageHead
-        title="Page Not Found | Cable Movers"
+        title="Page Not Found | Top Providers"
         description=""
-        url="https://www.cablemovers.net/404"
+        url="https://www.topproviders.net/404"
       />
 
       <section>

@@ -7,7 +7,7 @@ function Privacy_Policy() {
         <>
 
             
-            <PageHead title="Terms and Conditions | Cable Movers" description="Cable Movers terms and conditions are very simple. You can read the details on this page." url="https://www.cablemovers.net/terms-and-conditions" />
+            <PageHead title="Terms and Conditions | Top Providers" description="Top Providers terms and conditions are very simple. You can read the details on this page." url="https://www.topproviders.net/terms-and-conditions" />
       
             <PageBanner title="TERMS AND CONDITIONS" />
             <section className="py-16">
@@ -47,7 +47,7 @@ function Privacy_Policy() {
                             </li>
                             <li>
                                 <p className='text-base mb-4'>
-                                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to cablemovers.net.
+                                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to topproviders.net.
                                 </p>
                             </li>
                             <li>
@@ -72,7 +72,7 @@ function Privacy_Policy() {
                             </li>
                             <li>
                                 <p className='text-base mb-4'>
-                                    <strong>Website</strong> refers to Cable Movers, accessible from cablemovers.net
+                                    <strong>Website</strong> refers to Top Providers, accessible from topproviders.net
                                 </p>
                             </li>
                             <li>
@@ -207,7 +207,7 @@ function Privacy_Policy() {
                         <ul className='md:text-base text-2xl'>
                             <li>
                                 <p className='text-base mb-4'>
-                                    By email: contact@cablemovers.net
+                                    By email: contact@topproviders.net
                                 </p>
                             </li>
                             <li>

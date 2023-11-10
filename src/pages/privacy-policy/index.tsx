@@ -5,7 +5,7 @@ function Privacy_Policy() {
     return (
         <>
 
-            <PageHead title="Privacy Policy | Cable Movers" description="Cable Movers privacy policy is very simple. You can read the details on this page." url="https://www.cablemovers.net/privacy-policy" />
+            <PageHead title="Privacy Policy | Top Providers" description="Top Providers privacy policy is very simple. You can read the details on this page." url="https://www.topproviders.net/privacy-policy" />
 
             <PageBanner title="Privacy Policy" />
             <section className="py-16">
@@ -48,7 +48,7 @@ function Privacy_Policy() {
                             </li>
                             <li>
                                 <p className='text-base mb-4'>
-                                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to cablemovers.net.
+                                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to topproviders.net.
                                 </p>
                             </li>
                             <li>
@@ -88,7 +88,7 @@ function Privacy_Policy() {
                             </li>
                             <li>
                                 <p className='text-base mb-4'>
-                                    <strong>Website</strong> refers to cablemovers.net, accessible from cablemovers.net
+                                    <strong>Website</strong> refers to topproviders.net, accessible from topproviders.net
                                 </p>
                             </li>
                             <li>
@@ -376,7 +376,7 @@ function Privacy_Policy() {
                         <ul className='md:text-base text-2xl'>
                             <li>
                                 <p className='text-base mb-4'>
-                                    By email: contact@cablemovers.net
+                                    By email: contact@topproviders.net
                                 </p>
                             </li>
                             <li>
