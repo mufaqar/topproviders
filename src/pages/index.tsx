@@ -20,23 +20,20 @@ export default function Home({ BlogPosts }: any) {
 
    return (
       <>
-       <PageHead title="Top Providers | Find The Best Internet and TV Service Providers" description="Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet." url="https://www.topproviders.net" />
-       
-         <section className={`min-h-screen h-full flex items-center bg-[url("/images/slide3.jpg")] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/50`}>
-            <div className="container mx-auto px-4 grid md:grid-cols-2 gap-7 items-center">
-               <div className="py-10">
-                  <h1 className="text-3xl md:text-5xl md:leading-tight font-bold text-white">
-                     Find <span className="text-[#ef9831]">Internet and TV Service Providers</span> in your area by Top Providers
+         <PageHead title="Top Providers | Find The Best Internet and TV Service Providers" description="Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet." url="https://www.topproviders.net" />
+
+         <section className={`min-h-screen h-full flex items-center`}>
+            <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
+               <div className="py-10 md:w-[55%] w-full">
+                  <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
+                     Find Internet and TV Service Providers in your area
                   </h1>
-                  <p className='text-[22px] font-normal text-white my-5'>
-                     Moving or looking to change your service provider, Top Providers can help. Compare Internet and TV service providers, plans and prices by ZIP code.
-                  </p>
-                  <div className="">
+                  <div className="mt-8">
                      <SearchForm />
                   </div>
                </div>
-               <div className=''>
-                  {/* <Image src="/images/slug-bg.png" alt="Feature Image" width={1200} height={1626} className='object-cover w-full h-full' /> */}
+               <div className='md:w-[45%] w-full'>
+                  <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
                </div>
             </div>
          </section>
@@ -215,7 +212,7 @@ export default function Home({ BlogPosts }: any) {
                   </h2>
                </div>
                <div className='grid md:grid-cols-3 grid-cols-1 gap-7'>
-                  {BlogPosts?.slice(0,3).map((item: any, idx: number) => {
+                  {BlogPosts?.slice(0, 3).map((item: any, idx: number) => {
                      return (
                         <Blogpost key={idx} data={item} />
                      );

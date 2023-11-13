@@ -108,13 +108,13 @@ html {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1110px;
+    max-width: 1260px;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
-    max-width: 1110px;
+    max-width: 1260px;
   }
 }
 

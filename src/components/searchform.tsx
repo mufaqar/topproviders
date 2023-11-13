@@ -81,10 +81,10 @@ const SearchForm = () => {
     <>
       {loader ? <div className='fixed z-50 inset-0 !w-full bg-black/60 flex items-center flex-col justify-center'><div className="custom-loader"></div></div> :
       <form>
-        <div className="relative flex items-center w-full m-auto serch_form">
-          <FaMagnifyingGlass className="absolute ml-3" />
-          <input type="text" onKeyDown={handleKeyDown} placeholder="Enter Zip Code" maxLength={5} name="zip_code" value={zipcode} onChange={(e) => setzipcode(e.target.value)} className="w-full py-3 pl-10 pr-8 border outline-none md:w-80 border-zinc-400 rounded-l-md" />
-          <button className="px-4 py-[13px] font-semibold text-white bg-[#ef9831] border-[#ef9831] rounded-r-md" onClick={handleState}>Search</button>
+        <div className="relative flex items-center w-fit serch_form bg-white rounded-[3px] shadow-[0_0_12px_0_rgba(0,0,0,0.26)]">
+          <FaMagnifyingGlass className="absolute ml-3 text-3xl text-[#6746C8]" />
+          <input type="text" onKeyDown={handleKeyDown} placeholder="Enter Zip Code" maxLength={5} name="zip_code" value={zipcode} onChange={(e) => setzipcode(e.target.value)} className="placeholder:text-lg placeholder:font-bold placeholder:text-[#4B4B4B] appearance-none w-full py-3 pl-12 pr-8 outline-none md:w-96 rounded-[3px]" />
+          <button className="px-6 py-[18px] text-lg uppercase font-semibold text-[#4B4B4B] bg-[#FECE2F] border-[#FECE2F] rounded-[3px]" onClick={handleState}>Search</button>
         </div>
         {resultNotFound && <div className='w-full py-2 text-red-500'>Result not found! please enter correct zipcode </div>}
         </form>
