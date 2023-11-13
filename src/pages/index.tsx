@@ -38,12 +38,20 @@ export default function Home({ BlogPosts }: any) {
             </div>
          </section>
 
-         <section className="py-16 ">
+         <section className="py-16 bg-[#F5F6FC]">
             <div className="container mx-auto px-4">
-               <div className="mb-10">
-                  <h2 className='text-center md:text-4xl text-2xl font-bold'>
-                     How it Works?
-                  </h2>
+               <div className="mb-10 flex md:flex-row flex-col gap-7 items-center">
+                  <div className='md:w-[65%] w-full'>
+                     <h2 className='md:text-6xl text-2xl font-bold mb-5'>
+                        How it Works?
+                     </h2>
+                     <p className='text-lg font-normal text-[#4E4E4E]'>
+                        Here At Top Providers, We Research And Review Leading Providers And Have Found The Most Popular Plans And Deals On Every Major Internet And Tv Service Provider To Help You Shop Smartly.
+                     </p>
+                  </div>
+                  <div className='md:w-[45%] w-full'>
+                     <Image src="/images/how-work.png" alt="how-work" width={460} height={303} />
+                  </div>
                </div>
                <div className='relative grid gap-7 md:grid-cols-3'>
                   <ServiceBox
