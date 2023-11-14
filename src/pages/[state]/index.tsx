@@ -452,7 +452,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   // const All_zones_list = resultString.replace(/["\[\]]/g, '');
 
 
-  const response_city = await fetch(`https://cblproject.topproviders.net/wp-json/custom/v1/area-zones?state=${state}`);
+  const response_city = await fetch(`https://topproviders.mufaqar.com/wp-json/custom/v1/area-zones?state=${state}`);
   const providers_city_data = await response_city.json();
 
   const zoneTitlesQ = providers_city_data?.map((zone: any) => zone.title);
@@ -462,7 +462,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const postData = {
     internet_services: All_zones_listQ
   };
-  const response_data = await fetch('https://cblproject.topproviders.net/wp-json/custom/v1/providers', {
+  const response_data = await fetch('https://topproviders.mufaqar.com/wp-json/custom/v1/providers', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

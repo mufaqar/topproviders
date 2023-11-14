@@ -36,10 +36,7 @@ async function fetchData() {
 }
 
 async function fetchStateWiseCity() {
-  // const responceStateWiseCity = await fetch('./public/cites.json')
-  // https://cblproject.cablemovers.net/wp-json/custom/v1/states-cities
-  // const dataStateWiseCity = await responceStateWiseCity.json();
-  // Initialize an empty array to store the result URLs
+  
   const resultUrls = [];
   // Iterate through the keys and their associated arrays
   for (const key in citiesData) {
