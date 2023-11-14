@@ -72,21 +72,23 @@ const Footer = () => {
         </div>
       </div>
       <div className='px-4 mt-16 pt-4 border-t border-white/20'>
-        <div className='flex items-center justify-between'>
+        <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
           <p className='text-sm font-normal text-white'>
             Copyright © 2023 topproviders.net. All rights reserved.
           </p>
-          <ul className='flex items-center gap-5'>
+          <ul className='flex items-center md:gap-5 gap-2 text-white'>
             <li>
               <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
-                Sitemap -
+                Sitemap
               </Link>
             </li>
+            <li>-</li>
             <li>
               <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
                 Terms & Conditions
               </Link>
             </li>
+            <li>-</li>
             <li>
               <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
                 Privacy Policy

@@ -4,15 +4,20 @@ import React from 'react'
 
 export default function Blogpost({ data }: any) {
     return (
-        <Link href={`/blog/${data?.node?.slug}`}>
-        <div className="rounded-lg p-4 lg:p-0 shadow-md">
-            <Image src={data?.node?.featuredImage?.node?.mediaItemUrl} alt="technology" className="rounded-tr-lg rounded-tl-lg" width={500} height={360} />
-            <div className="p-5">
-                <h2 className="font-bold text-xl text-gray-800 text-center">{data?.node?.title}</h2>
-                <div className="text-gray-700 mt-2 text-justify text-sm" dangerouslySetInnerHTML={{ __html: data?.node?.excerpt }} />
+        <div className='relative bg-gradient-to-b from-[#000000] to-[#6746C8] group'>
+            <Image src="/images/blog2.png" alt="blog2" width={435} height={377} className='opacity-[.3] group-hover:opacity-70 transition duration-300 ease-in-out' />
+            <div className='grid gap-3 p-5 absolute bottom-0'>
+                <Link href="#" className='text-lg font-normal text-[#FECE2F]'>
+                    News
+                </Link>
+                <Link href="#" className='md:text-2xl text-xl font-bold text-white'>
+                    Best Internet Speeds for Working From Home
+                </Link>
+                <Link href="#" className='text-lg font-normal text-[#FECE2F]'>
+                    May 6, 2023
+                </Link>
             </div>
         </div>
-        </Link>
 
     )
 }
