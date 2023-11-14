@@ -125,7 +125,7 @@ const Header = () => {
 
                     </ul>
                 </div>
-                <div className="sm:w-1/3 w-full">
+                <div className="sm:w-1/3 w-full md:block hidden">
                     {/* <Link href="/contact-us" className='text-sm font-normal font-[Roboto] bg-[#FECE2F] text-[#4B4B4B] py-3 px-12 rounded-[3px] flex w-fit ml-auto'>
                         Contact Us
                     </Link> */}
