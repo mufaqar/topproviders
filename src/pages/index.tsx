@@ -34,7 +34,7 @@ export default function Home({ BlogPosts }: any) {
                   <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
                      Find Internet and TV Service Providers in your area
                   </h1>
-                  <div className="mt-8">
+                  <div className="mt-8 md:w-96">
                      <SearchForm />
                   </div>
                </div>
