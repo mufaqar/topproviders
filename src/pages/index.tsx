@@ -79,7 +79,7 @@ export default function Home({ BlogPosts }: any) {
                      custm_Bg="bg-[#ffdbce]"
                   />
                   <ServiceBox
-                     img={<BsSpeedometer  className="text-6xl text-[#215690] mx-auto" />}
+                     img={<BsSpeedometer className="text-6xl text-[#215690] mx-auto" />}
                      title="Calculate Your Speed"
                      content="Don’t pay for more than you need! Use our Internet Speed Quiz to determine the best internet speed for your lifestyle."
                      custm_Bg="bg-[#e8ebe4]"
@@ -127,6 +127,18 @@ export default function Home({ BlogPosts }: any) {
                      />
                   </div>
                </div>
+            </div>
+
+         </section>
+         <section className="py-16 bg-[#6746C8]">
+            <div className="container mx-auto px-4">
+               <h2 className='md:text-6xl text-2xl font-bold text-center text-white mb-10'>
+                  Find Internet Providers by State
+               </h2>
+               <div className='w-fit mx-auto mb-3'>
+                  <SearchForm />
+               </div>
+               <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' />
             </div>
 
          </section>
