@@ -30,15 +30,15 @@ export default function Home({ BlogPosts }: any) {
 
          <section className={`min-h-screen h-full flex items-center`}>
             <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
-               <div className="py-10 md:w-[55%] w-full">
+               <div className="py-10 md:w-[61%] w-full">
                   <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
-                     Find Internet and TV Service Providers in your area
+                     Find <span className='text-[#6746C8]'>Internet</span> and <span className='text-[#6746C8]'>TV Service Providers </span>in your area
                   </h1>
-                  <div className="mt-8 md:w-96">
+                  <div className="mt-8 md:w-[524px]">
                      <SearchForm />
                   </div>
                </div>
-               <div className='md:w-[45%] w-full'>
+               <div className='md:w-[38%] w-full'>
                   <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
                </div>
             </div>
@@ -135,7 +135,7 @@ export default function Home({ BlogPosts }: any) {
                <h2 className='md:text-6xl text-2xl font-bold text-center text-white mb-10'>
                   Find Internet Providers by State
                </h2>
-               <div className='w-fit mx-auto mb-3'>
+               <div className='w-[524px] mx-auto mb-3'>
                   <SearchForm />
                </div>
                <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' />
@@ -144,18 +144,18 @@ export default function Home({ BlogPosts }: any) {
          </section>
          <section className="py-16">
             <div className="container mx-auto py-16 px-6 flex md:flex-row flex-col items-center gap-10 bg-[#F2F2F2] md:py-10 md:px-16 rounded-tl-[90px] rounded-br-[90px] rounded-tr-[3px] rounded-bl-[3px]">
-               <div className='md:w-[38%] w-full'>
+               <div className='md:w-[44%] w-full'>
                   <h2 className='md:text-6xl text-2xl font-bold text-[#262626] mb-5'>
                      Review <br />Top Providers
                   </h2>
                   <p className='text-lg font-normal text-[#4E4E4E] mb-5'>
                      Let us help you sift through the noise by comparing the top providers near you. Find high-speed options for internet, TV, or bundles that meet your needs.
                   </p>
-                  <Link href="#" className='text-sm font-normal font-[Roboto] bg-[#F15A25] text-white py-3 px-12 rounded-[3px] '>
+                  <Link href="#" className='text-sm font-normal AxiformaRegular bg-[#F15A25] text-white py-3 px-12 rounded-[3px] '>
                      View All
                   </Link>
                </div>
-               <div className='md:w-[72%] w-full grid md:grid-cols-4 grid-cols-2 gap-4 [&>*:nth-child(5)]:md:ml-14 [&>*:nth-child(6)]:md:ml-14 [&>*:nth-child(7)]:md:ml-14 [&>*:nth-child(8)]:md:ml-14'>
+               <div className='md:w-[56%] w-full grid md:grid-cols-4 grid-cols-2 gap-4 [&>*:nth-child(5)]:md:ml-14 [&>*:nth-child(6)]:md:ml-14 [&>*:nth-child(7)]:md:ml-14 [&>*:nth-child(8)]:md:ml-14'>
                   <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
                      <Link href="/providers/cox" >
                         <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='mx-auto' />

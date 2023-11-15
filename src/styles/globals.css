@@ -47,19 +47,36 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'AxiformaBold';
+  src: url('../../public/fonts/Axiforma-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'AxiformaMedium';
+  src: url('../../public/fonts/Axiforma-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'AxiformaRegular';
+  src: url('../../public/fonts/Axiforma-Regular.ttf');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Manrope', sans-serif !important;
+  font-family: 'AxiformaBold', sans-serif !important;
 }
 
-body,
-p,
-html {
-  font-family: 'Manrope', sans-serif;
+.AxiformaBold {
+  font-family: 'AxiformaBold', sans-serif;
+}
+
+.AxiformaRegular {
+  font-family: 'AxiformaRegular', sans-serif;
 }
 
 :root {
@@ -160,6 +177,7 @@ html {
   margin-bottom: 16px;
   margin-top: 16px;
 }
+
 .features ul li {
   font-size: 20px;
   line-height: 28px;
@@ -205,11 +223,13 @@ html {
   border-left: 1px solid #dedede;
 }
 
-.pros ul li, .cons ul li {
+.pros ul li,
+.cons ul li {
   font-size: 16px;
   list-style-type: none;
   margin-bottom: 6px;
 }
+
 .pros ul li:before {
   content: '✓';
   border: 1px solid green;
@@ -221,6 +241,7 @@ html {
   line-height: 20px;
   display: inline-block;
 }
+
 .cons ul li:before {
   content: '☓';
   border: 1px solid red;
@@ -233,17 +254,27 @@ html {
   display: inline-block;
 }
 
-.slug_cta .serch_form{
+.slug_cta .serch_form {
   padding: 0;
   justify-content: center;
 }
-.slug_cta .serch_form svg{
+
+.slug_cta .serch_form svg {
   left: 1.5rem;
 }
-.slug_cta .serch_form input{
+
+.slug_cta .serch_form input {
   max-width: 12rem;
 }
 
 
-.tch { font-size: medium; text-align: center;}
-.tcd { font-size: larger; text-align: center; font-weight: bold;}
+.tch {
+  font-size: medium;
+  text-align: center;
+}
+
+.tcd {
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}

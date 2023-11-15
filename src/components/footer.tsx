@@ -43,13 +43,13 @@ const Footer = () => {
         </div>
 
         <div className='col-span-2'>
-          <h6 className='text-lg font-normal text-white mb-5 '>
+          <h6 className='text-lg font-normal text-white mb-5 AxiformaBold'>
             PROVIDERS
           </h6>
           <ul className='grid md:grid-cols-3 grid-cols-1 gap-1'>
             {Providers_Data?.map((item: any, idx: number) => {
               return <li key={idx}>
-                <Link href={item?.link} className='text-sm font-medium capitalize text-white hover:text-white'>
+                <Link href={item?.link} className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
                   {item?.name}
                 </Link>
               </li>
@@ -57,13 +57,13 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className='text-lg font-normal text-white mb-5'>
+          <h6 className='text-lg font-normal text-white mb-5 AxiformaBold'>
             COMPANY
           </h6>
           <ul className='grid gap-3'>
             {NavLinks?.map((item: any, idx: number) => {
               return <li key={idx}>
-                <Link href={item?.link} className='text-sm font-medium capitalize text-white hover:text-white'>
+                <Link href={item?.link} className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
                   {item?.name}
                 </Link>
               </li>
@@ -73,24 +73,24 @@ const Footer = () => {
       </div>
       <div className='px-4 mt-16 pt-4 border-t border-white/20'>
         <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
-          <p className='text-sm font-normal text-white'>
+          <p className='text-sm font-normal text-white AxiformaRegular'>
             Copyright © 2023 topproviders.net. All rights reserved.
           </p>
           <ul className='flex items-center md:gap-5 gap-2 text-white'>
             <li>
-              <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
+              <Link href="#" className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
                 Sitemap
               </Link>
             </li>
             <li>-</li>
             <li>
-              <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
+              <Link href="#" className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
                 Terms & Conditions
               </Link>
             </li>
             <li>-</li>
             <li>
-              <Link href="#" className='text-sm font-medium capitalize text-white hover:text-white'>
+              <Link href="#" className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
                 Privacy Policy
               </Link>
             </li>
