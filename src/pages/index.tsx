@@ -21,11 +21,7 @@ import { GiMoneyStack } from 'react-icons/gi';
 import { FaHandsHelping } from 'react-icons/fa';
 import Get_Lootie from '@/components/lootie'
 import animationData from "../../public/loti/home.json";
-
-
 export default function Home({ BlogPosts }: any) {
-
-
    return (
       <>
          <PageHead title="Top Providers | Find The Top Internet and TV Service Providers" description="Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet." url="https://www.topproviders.net" />
