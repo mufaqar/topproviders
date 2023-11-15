@@ -20,7 +20,7 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import { GiMoneyStack } from 'react-icons/gi';
 import { FaHandsHelping } from 'react-icons/fa';
 import Get_Lootie from '@/components/lootie'
-import animationData from "../../public/loti/home.json";
+import animationData from "../../public/loti/lotie1.json";
 export default function Home({ BlogPosts }: any) {
    return (
       <>
@@ -37,7 +37,7 @@ export default function Home({ BlogPosts }: any) {
                </div>
                <div className='md:w-[38%] w-full'>
                   <Get_Lootie src={animationData} />
-                  <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
+                  {/* <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' /> */}
                </div>
             </div>
          </section>

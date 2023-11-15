@@ -10,6 +10,8 @@ import { FaRegHandshake, FaArrowRightLong, FaMapLocationDot } from 'react-icons/
 import { BsShopWindow } from 'react-icons/bs'
 import { FaPhoneAlt } from 'react-icons/fa'
 import PageHead from '@/components/metas/pagesmeta'
+import Get_Lootie from '@/components/lootie'
+import animationData from '../../../public/loti/lotie2.json'
 
 
 function Providers({ allProviders }: any) {
@@ -23,14 +25,15 @@ function Providers({ allProviders }: any) {
                 <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
                     <div className="py-10 md:w-[61%] w-full">
                         <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
-                            Find <span className='text-[#6746C8]'>Internet</span> and <span className='text-[#6746C8]'>TV Service Providers </span>in your area
+                            Find <span className='text-[#FECE2F]'>Top</span> <span className='text-[#6746C8]'>Internet</span> & <span className='text-[#6746C8]'>TV  Service <span className='text-[#FECE2F]'> Providers</span> </span>in your area
                         </h1>
                         <div className="mt-8 md:w-[524px]">
                             <SearchForm />
                         </div>
                     </div>
                     <div className='md:w-[38%] w-full'>
-                        <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
+                        <Get_Lootie src={animationData} />
+                        {/* <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' /> */}
                     </div>
                 </div>
             </section>
@@ -72,9 +75,9 @@ function Providers({ allProviders }: any) {
 
             <section className="py-16">
                 <div className="container mx-auto px-4">
-                        <h2 className='md:text-6xl text-2xl font-bold text-center mb-5'>
-                            Top Internet and TV Service providers
-                        </h2>
+                    <h2 className='md:text-6xl text-2xl font-bold text-center mb-5'>
+                        Top Internet and TV Service providers
+                    </h2>
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
                         {
                             allProviders.map((item: any, idx: number) => {

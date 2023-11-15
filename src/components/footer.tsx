@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className='bg-[#6041BB] pt-20 pb-4 md:rounded-tr-[90px] md:rounded-tl-[90px] rounded-tr-[50px] rounded-tl-[50px]'>
       <div className='container mx-auto px-4 grid md:grid-cols-5 grid-cols-1 gap-5'>
         <div className='col-span-2'>
-          <Link href="/">
+          <Link href="/" className='inline-block'>
             <Image src="/images/logo-white.png" alt="logo-white" height={55} width={265} />
           </Link>
 
