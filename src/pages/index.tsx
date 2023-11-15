@@ -19,10 +19,11 @@ import { BsSpeedometer } from 'react-icons/bs';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { GiMoneyStack } from 'react-icons/gi';
 import { FaHandsHelping } from 'react-icons/fa';
+import Lottie from 'lottie-react';
 
 
 export default function Home({ BlogPosts }: any) {
-
+   const animationData = "https://assets3.lottiefiles.com/packages/lf20_JExdDIS87T.json";
 
    return (
       <>
@@ -39,6 +40,11 @@ export default function Home({ BlogPosts }: any) {
                   </div>
                </div>
                <div className='md:w-[38%] w-full'>
+                  <Lottie
+                     animationData={animationData}
+                     className="flex justify-center items-center"
+                     loop={true}
+                  />
                   <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
                </div>
             </div>
