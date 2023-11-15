@@ -19,32 +19,28 @@ import { BsSpeedometer } from 'react-icons/bs';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { GiMoneyStack } from 'react-icons/gi';
 import { FaHandsHelping } from 'react-icons/fa';
-import Lottie from 'lottie-react';
+import Get_Lootie from '@/components/lootie'
+import animationData from "../../public/loti/home.json";
 
 
 export default function Home({ BlogPosts }: any) {
-   const animationData = "https://assets3.lottiefiles.com/packages/lf20_JExdDIS87T.json";
+
 
    return (
       <>
-         <PageHead title="Top Providers | Find The Best Internet and TV Service Providers" description="Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet." url="https://www.topproviders.net" />
-
+         <PageHead title="Top Providers | Find The Top Internet and TV Service Providers" description="Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet." url="https://www.topproviders.net" />
          <section className={`min-h-screen h-full flex items-center`}>
             <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
                <div className="py-10 md:w-[61%] w-full">
                   <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
-                     Find <span className='text-[#6746C8]'>Internet</span> and <span className='text-[#6746C8]'>TV Service Providers </span>in your area
+                     Find <span className='text-[#FECE2F]'>Top</span> <span className='text-[#6746C8]'>Internet</span> & <span className='text-[#6746C8]'>TV  Service <span className='text-[#FECE2F]'> Providers</span> </span>in your area
                   </h1>
                   <div className="mt-8 md:w-[524px]">
                      <SearchForm />
                   </div>
                </div>
                <div className='md:w-[38%] w-full'>
-                  <Lottie
-                     animationData={animationData}
-                     className="flex justify-center items-center"
-                     loop={true}
-                  />
+                  <Get_Lootie src={animationData} />
                   <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
                </div>
             </div>
