@@ -19,70 +19,62 @@ function Providers({ allProviders }: any) {
 
             <PageHead title="Best Internet and TV Service Providers We Work With | Top Providers" description="Top Providers partners with top internet and TV service providers and offers one stop shop so you can Search, compare and order all at one site." url="https://www.topproviders.net/providers" />
 
-            <section className="min-h-[40vh]  flex items-center bg-[#215690]">
-                <div className="container mx-auto px-4">
-                    <div >
-                        <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10 text-white">
-                            Find Internet & TV Service Providers in
-                            <br /><span className="text-[#ef9831]">your area.</span>
+            <section className={`min-h-screen h-full flex items-center`}>
+                <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
+                    <div className="py-10 md:w-[61%] w-full">
+                        <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
+                            Find <span className='text-[#6746C8]'>Internet</span> and <span className='text-[#6746C8]'>TV Service Providers </span>in your area
                         </h1>
-                        <p className="text-xl text-center font-[Roboto] my-5 text-white">
-                            Enter your zip so we can find the best providers in your area:
-                        </p>
-                        <div className='grid justify-center'>
+                        <div className="mt-8 md:w-[524px]">
                             <SearchForm />
                         </div>
                     </div>
+                    <div className='md:w-[38%] w-full'>
+                        <Image src="/images/main-bg.png" alt="Feature Image" width={636} height={486} className='' />
+                    </div>
                 </div>
             </section>
-            <section className="">
-                <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-                    <div className="mx-auto max-w-xl text-center">
-                        <h2 className='text-3xl font-bold'>
-                            Featured Providers
-                        </h2>
-                    </div>
+
+            <section className="py-16 bg-[#F5F6FC]">
+                <div className="container mx-auto px-4">
+                    <h2 className='md:text-6xl text-2xl font-bold text-center mb-5'>
+                        Featured Providers
+                    </h2>
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
-                        <div className="block rounded-xl border border-gray-100 p-3 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10  ">
-                            <Link href="/providers/att">  <Image src='/images/logo/att.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
-                                <h2 className="mt-4 text-lg  text-center">
-                                    AT&T
+                        <Link href="/providers/att" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                            <Image src='/images/logo/att.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
+                            <h2 className="mt-4 text-lg  text-center">
+                                AT&T
 
-                                </h2>
-                            </Link>
-                        </div>
-                        <div className="block rounded-xl border border-gray-100 p-3 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                            <Link href="/providers/spectrum">  <Image src='/images/logo/Spectrum.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
-                                <h2 className="mt-4 text-lg  text-center">
-                                    SPECTRUM
-                                </h2>
-                            </Link>
-                        </div>
-                        <div className="block rounded-xl border border-gray-100 p-3 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                            <Link href="/providers/earthlink">  <Image src='/images/logo/EarthLink.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
-                                <h2 className="mt-4 text-lg  text-center">
-                                    EARTHLINK
-                                </h2>
-                            </Link>
-                        </div>
-                        <div className="block rounded-xl border border-gray-100 p-3 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                            <Link href="/providers/hughesnet">  <Image src='/images/logo/HughesNet.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
-                                <h2 className="mt-4 text-lg  text-center">
-                                    HUGHESNET
-                                </h2>
-                            </Link>
-                        </div>
+                            </h2>
+                        </Link>
+                        <Link href="/providers/spectrum" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                            <Image src='/images/logo/Spectrum.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
+                            <h2 className="mt-4 text-lg  text-center">
+                                SPECTRUM
+                            </h2>
+                        </Link>
+                        <Link href="/providers/earthlink" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                            <Image src='/images/logo/EarthLink.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
+                            <h2 className="mt-4 text-lg  text-center">
+                                EARTHLINK
+                            </h2>
+                        </Link>
+                        <Link href="/providers/hughesnet" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                            <Image src='/images/logo/HughesNet.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
+                            <h2 className="mt-4 text-lg  text-center">
+                                HUGHESNET
+                            </h2>
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="">
-                <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-                    <div className="mx-auto max-w-xl text-center">
-                        <h2 className='text-3xl font-bold'>
+            <section className="py-16">
+                <div className="container mx-auto px-4">
+                        <h2 className='md:text-6xl text-2xl font-bold text-center mb-5'>
                             Top Internet and TV Service providers
                         </h2>
-                    </div>
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
                         {
                             allProviders.map((item: any, idx: number) => {
@@ -97,67 +89,6 @@ function Providers({ allProviders }: any) {
                     </div>
                 </div>
             </section>
-            {/* <section className="">
-                <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-                    <div className="text-center">
-                        <h2 className='text-3xl font-bold'>
-                            WHY CHOOSE topproviders.net?
-                        </h2>
-                        <p className='text-base mt-5 mb-10'>
-                            Finding Internet & TV providers is tough, but we've made it easy.
-                        </p>
-                    </div>
-                    <div className='flex md:flex-row flex-col gap-8 items-center justify-center'>
-                        <div className='bg-[#F3FAFF]  w-full p-8 rounded-2xl'>
-                            <FaMapLocationDot className="text-[#0066d4] text-6xl transform md:rotate-0 rotate-90 mx-auto" />
-                            <h5 className='text-base font-bold text-center mt-5'>
-                                NATIONWIDE COVERAGE
-                            </h5>
-                            <p className='text-base  text-center mt-3'>Find all Internet and TV providers available to you in your Area.</p>
-                        </div>
-                        <div>
-                            <FaArrowRightLong className="text-[#0066d4] text-3xl transform md:rotate-0 rotate-90" />
-                        </div>
-                        <div className='bg-[#F3FAFF]  w-full p-8 rounded-2xl'>
-
-                            <BsShopWindow className="text-[#0066d4] text-6xl transform md:rotate-0 rotate-90 mx-auto" />
-
-                            <h5 className='text-base font-bold text-center mt-5'>
-                                ONE STOP SHOP
-                            </h5>
-                            <p className='text-base  text-center mt-3'>compare all Internet and TV plans, order service for no extra charge.</p>
-                        </div>
-                        <div>
-                            <FaArrowRightLong className="text-[#0066d4] text-3xl transform md:rotate-0 rotate-90" />
-                        </div>
-
-
-                        <div className='bg-[#F3FAFF]  w-full p-8 rounded-2xl'>
-
-                            <FaRegHandshake className="text-[#0066d4] text-6xl transform md:rotate-0 rotate-90 mx-auto" />
-                            <h5 className='text-base font-bold text-center mt-5'>
-
-                                TOP BRANDS
-                            </h5>
-                            <p className='text-base  text-center mt-3'>We partnered with Top Brands to help you shop smartly.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className='bg-[#FD8800] py-5'>
-
-                <div className='container mx-auto grid md:grid-cols-2 items-center text-5xl font-bold uppercase'>
-                    <div className="grid items-center justify-end">
-                        Call to Setup
-                    </div>
-                    <div className=" items-center justify-start flex gap-3">  <FaPhoneAlt className="ml-5 text-5xl font-normal  " /> <Link href="tel:1-833-592-0098">1-833-592-0098</Link> </div>
-
-
-
-                </div>
-            </section> */}
-
 
         </>
     )
