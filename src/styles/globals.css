@@ -278,3 +278,31 @@ h6 {
   text-align: center;
   font-weight: bold;
 }
+
+
+
+
+.progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  width: 270px; height: 135px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+  overflow: hidden;
+}
+
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 270px; height: 270px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 28px solid #ccc;     /* half gray, */
+  border-bottom-color: #EF9831;  /* half azure */
+  border-right-color: #EF9831;
+}
