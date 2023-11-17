@@ -21,6 +21,9 @@ import { GiMoneyStack } from 'react-icons/gi';
 import { FaHandsHelping } from 'react-icons/fa';
 import Get_Lootie from '@/components/lootie'
 import animationData from "../../public/loti/lotie1.json";
+import StateMap from '@/components/stateMap'
+
+
 export default function Home({ BlogPosts }: any) {
    return (
       <>
@@ -136,7 +139,8 @@ export default function Home({ BlogPosts }: any) {
                <div className='w-[524px] mx-auto mb-3'>
                   <SearchForm />
                </div>
-               <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' />
+               {/* <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' /> */}
+               <StateMap />
             </div>
 
          </section>

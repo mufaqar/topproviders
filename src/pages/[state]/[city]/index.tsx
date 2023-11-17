@@ -38,7 +38,7 @@ export default function Providers({ allProviders, zones, zipcode, my_city, provi
         body: JSON.stringify({ query, variables }),
       });
       const respons = await response.json();
-      set_city_data(respons.data.zones.nodes);
+      set_city_data(respons.data?.zones?.nodes);
 
     }
     fetchData();

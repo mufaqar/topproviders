@@ -111,8 +111,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                             {formatType(type)}  Service Providers in <span className="text-[#ef9831]">{zipcode}</span>
                         </h2>
                     </div>
-                    <div className='grid gap-7'>
-
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-28 mt-28'>
                         {
                             allProviders?.map((item: any, idx: number) => {
                                 var summaryData = {
