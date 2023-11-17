@@ -30,10 +30,7 @@ const StateMap = () => {
   const handleClick = (geo) => {
     const cur = allStates.find((s) => s.val === geo.id);
     if (cur) {
-      // Handle state change or redirection here based on the clicked state (cur.id)
-      // For example:
-      setSelectedState(cur.val);
-      // Redirect or perform actions based on the selected state
+     setSelectedState(cur.val);
     }
   };
 
