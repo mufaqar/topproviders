@@ -9,6 +9,7 @@ import {
 } from "react-simple-maps";
 
 import allStates from "../const/usStateData.json";
+import { useRouter } from "next/router";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -26,11 +27,13 @@ const offsets = {
 
 const StateMap = () => {
   const [selectedState, setSelectedState] = useState('48');
+  const router = useRouter()
 
   const handleClick = (geo) => {
     const cur = allStates.find((s) => s.val === geo.id);
     if (cur) {
      setSelectedState(cur.val);
+     router.push(cur.id.toLocaleLowerCase())
     }
   };
 
