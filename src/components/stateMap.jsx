@@ -34,7 +34,7 @@ const StateMap = () => {
     if (cur) {
      console.log("🚀 ~ file: stateMap.jsx:35 ~ handleClick ~ cur:", cur)
      setSelectedState(cur.val);
-     router.push(cur.id.toLocaleLowerCase())
+     router.push((cur.id).toLocaleLowerCase())
     }
   };
 
