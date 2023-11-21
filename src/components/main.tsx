@@ -7,7 +7,7 @@ const Main = () => {
             <div className="bg-[#F3FAFF] container mx-auto px-4 shadow-xl rounded-3xl sm:px-10 grid md:grid-cols-2 items-center">
                 <div className="py-10">
                     <h1 className="sm:text-5xl text-2xl font-bold">
-                        Find <span className="text-[#ef9831]">Internet & TV Providers</span> in Your Area
+                        Find <span className="text-[#FECE2F]">Internet & TV Providers</span> in Your Area
                     </h1>
                     <div className="w-full py-5 mt-6 bg-white border md:h-52 h-40 rounded-3xl flex">
                         <SearchForm />

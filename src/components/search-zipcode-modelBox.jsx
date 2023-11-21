@@ -32,7 +32,7 @@ const SearchZipcodeModelBox = ({modalIsOpen, setIsOpen}) => {
         <div className="container mx-auto px-10">
           <div >
             <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">
-              Search <span className="text-[#EF9831]">Internet</span> Service <br/>Providers
+              Search <span className="text-[#FECE2F]">Internet</span> Service <br/>Providers
             </h1>
             <p className="text-xl text-center font-[Roboto] my-5">
               Enter your zipcode so we can find the best providers in your area:

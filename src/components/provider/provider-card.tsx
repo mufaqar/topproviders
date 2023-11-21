@@ -53,7 +53,7 @@ export const ProviderCard = ({ item, type, offer, count }: any) => {
                         </div>
                         <span className="text-white">80%</span>
                         <div className="text-center -mt-16 mb-6">
-                            <p className="tch text-[#EF9831]">
+                            <p className="tch text-[#FECE2F]">
                                 {type === "tv" ? (
                                     "Channels"
                                 ) : type === "internet-tv" ? (
@@ -84,15 +84,15 @@ export const ProviderCard = ({ item, type, offer, count }: any) => {
                     </div>
                 </div>
                 <p className="flex flex-col justify-center items-center mt-6 mb-8">
-                    <span className="font-extrabold text-[#EF9831] text-3xl"> ${item?.price} <sup className="font-light text-gray-800">/Month</sup></span>
+                    <span className="font-extrabold text-[#FECE2F] text-3xl"> ${item?.price} <sup className="font-light text-gray-800">/Month</sup></span>
                     <span className="font-mono mt-1">With ex VAT</span>
                 </p>
                 <Link href={`/providers/${item.slug}`}>
-                    <button className="text-base text-white hover:scale-105 uppercase !w-full rounded-sm px-5 py-3 bg-[#ef9831] hover:bg-[#215690]">View Plans</button>
+                    <button className="text-base text-white hover:scale-105 uppercase !w-full rounded-sm px-5 py-3 bg-[#FECE2F] hover:bg-[#6041BB]">View Plans</button>
                 </Link>
             </div>
             {/* <div className="w-full h-auto shadow-xl border rounded-t-md rounded-b-md flex flex-col">
-                <div className="md:w-full min-w-fit  bg-[#215690] flex justify-between items-center ">
+                <div className="md:w-full min-w-fit  bg-[#6041BB] flex justify-between items-center ">
                     <h2 className="text-base font-bold text-center text-white p-5"> <span> {count+1} </span>-  {item.provider}</h2>
                     <h2 className="text-base font-bold text-center text-white p-5">{offer}</h2>
                 </div>
@@ -139,7 +139,7 @@ export const ProviderCard = ({ item, type, offer, count }: any) => {
                             {
                                 features?.map((feature: any, idx: number) => (
                                     <li className="flex gap-2 items-center" key={idx}>
-                                        <svg className="min-w-[1rem] h-4  text-[#ef9831] font-extrabold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="min-w-[1rem] h-4  text-[#FECE2F] font-extrabold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M5 13l4 4L19 7" ></path>
                                         </svg>
                                         <span className="text-sm">
@@ -157,12 +157,12 @@ export const ProviderCard = ({ item, type, offer, count }: any) => {
                         <div>
                         <p className="tch">Pricing starts from</p>
                         <p className="tcd">
-                                <span className="font-extrabold text-[#215690] font-[Roboto] text-xl"> ${item?.price} </span> /mo.
+                                <span className="font-extrabold text-[#6041BB] font-[Roboto] text-xl"> ${item?.price} </span> /mo.
                             </p>
                         </div>
                     </div>
                     <div className="grid gap-3 items-center justify-center p-5">                        
-                        <Link href={`/providers/${item.slug}`} className="text-base text-white font-[Roboto] uppercase px-5 py-2.5 bg-[#ef9831] hover:bg-[#215690]">View Plans</Link>
+                        <Link href={`/providers/${item.slug}`} className="text-base text-white font-[Roboto] uppercase px-5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB]">View Plans</Link>
                     </div>
                 </div>
             </div> */}

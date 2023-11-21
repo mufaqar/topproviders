@@ -95,7 +95,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div >
             <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">
-              {formatType(type)} Service Providers in <br /><span className="text-[#ef9831] uppercase">{state}</span>
+              {formatType(type)} Service Providers in <br /><span className="text-[#6041BB] uppercase">{state}</span>
             </h1>
             <p className="text-xl text-center font-[Roboto] my-5">
               Enter your zip so we can find the best providers in your area:
@@ -112,7 +112,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold  capitalize leading-10">
-              {formatType(type)} Service Providers in <span className="text-[#ef9831] uppercase">{state}</span>
+              {formatType(type)} Service Providers in <span className="text-[#6041BB] uppercase">{state}</span>
             </h2>
           </div>
           <div className='grid gap-7'>
@@ -158,7 +158,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className=''>
             <h2 className="text-2xl font-bold">
-              Overview of  {formatType(type)} Service Providers in <span className="text-[#ef9831] uppercase">{state}</span>
+              Overview of  {formatType(type)} Service Providers in <span className="text-[#6041BB] uppercase">{state}</span>
             </h2>
 
             <OverView uniqueServiceType={uniqueServiceType} type={type} city="" state={state} allProviders={allProviders} />
@@ -173,12 +173,12 @@ export default function OurState({ allcities, state, allProviders }: any) {
           <div className="container mx-auto px-4">
             <div className='mb-10'>
               <h2 className="text-2xl font-bold  capitalize leading-10">
-                Cheap  {formatType(type)} Service Providers in <span className="text-[#ef9831] uppercase">{state}</span>
+                Cheap  {formatType(type)} Service Providers in <span className="text-[#6041BB] uppercase">{state}</span>
               </h2>
               <p className='text-xl font-[Roboto] mt-5'>Affordability is essential when choosing an  {formatType(type)} service provider. Below are the cheap {type} service providers in {state}.</p>
             </div>
 
-            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#215690]`}>
+            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#6041BB]`}>
               <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                 <div>
                   <h4 className="md:text-base text-xs text-center text-white">
@@ -227,12 +227,12 @@ export default function OurState({ allcities, state, allProviders }: any) {
             <div className='mb-10'>
               <h2 className="text-2xl font-bold  capitalize leading-10">
 
-                Fastest {formatType(type)} Service Providers In <span className="text-[#ef9831] uppercase">{state}</span>
+                Fastest {formatType(type)} Service Providers In <span className="text-[#6041BB] uppercase">{state}</span>
               </h2>
               <p className='text-xl font-[Roboto] mt-5'>If speed is your top priority consider the following {type} service providers in {state}</p>
             </div>
 
-            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#215690]`}>
+            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#6041BB]`}>
               <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                 <div>
                   <h4 className="md:text-base text-xs text-center text-white">
@@ -287,7 +287,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
 
             <div className=" w-full lg:max-w-[1200px] mx-auto h-auto mb-6">
               <div className="w-full h-auto shadow-xl border rounded-t-md rounded-b-md flex md:flex-col flex-row items-stretch">
-                <div className={`md:w-full min-w-[50px] grid  ${type === 'internet-tv' ? 'md:grid-cols-8' : 'md:grid-cols-7'} grid-cols-1 bg-[#215690] `}>
+                <div className={`md:w-full min-w-[50px] grid  ${type === 'internet-tv' ? 'md:grid-cols-8' : 'md:grid-cols-7'} grid-cols-1 bg-[#6041BB] `}>
                   <div className="md:border-r border-r-0 md:border-b-0 border-b grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                     <div>
                       <h4 className="md:text-base text-xs text-center text-white">
@@ -426,10 +426,10 @@ export default function OurState({ allcities, state, allProviders }: any) {
           <div>
             <ul className="grid sm:grid-cols-4 grid-cols-2 gap-5">
               {allcities[0].zones.nodes?.map((item: any, id: number) => {
-                return <li key={id} className='bg-[#F5F5F5] rounded-2xl px-4 py-4 text-[#215690] font-[Roboto] hover:drop-shadow-xl hover:shadow-bg-[#f5f5f5] group'>
+                return <li key={id} className='bg-[#F5F5F5] rounded-tl-[40px] rounded-br-[40px] rounded-md md:px-8 md:py-8 p-5 text-[#6041BB] font-[Roboto] hover:drop-shadow-xl hover:shadow-bg-[#f5f5f5] group'>
                   <Link href={`${state}/${item.cities.nodes[0].slug}`} className="">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-xl group-hover:underline">{item.cities.nodes[0].name}</h3>
+                      <h3 className="md:text-xl text-sm group-hover:underline">{item.cities.nodes[0].name}</h3>
                       <BsArrowRight strokeWidth="1" className="items-center text-right" />
                     </div>
 

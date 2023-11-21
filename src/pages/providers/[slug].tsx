@@ -62,7 +62,7 @@ export default function SProviders({ Provider, city, state }: any) {
           <div className='md:w-1/2 w-full py-10'>
             <Link href={`/providers/${provider_slug}`} >  <Image src={Provider?.featuredImage?.node.mediaItemUrl} alt="Feature Image" width={140} height={50} /></Link>
             <h1 className="text-3xl md:text-5xl md:leading-tight font-bold text-black">
-              <span className='text-[#ef9831]'>{provider_name} </span>Plans and Pricing for {currentMonthName}, {currentYear}
+              <span className='text-[#FECE2F]'>{provider_name} </span>Plans and Pricing for {currentMonthName}, {currentYear}
             </h1>
 
             <div className='features text-black mb-5'>
@@ -75,7 +75,7 @@ export default function SProviders({ Provider, city, state }: any) {
               <span className='md:text-3xl text-base'>$</span>
               {Provider?.providersInfo?.proPrice}<span className='grid'> <span className='md:text-3xl text-base'><sub>/mo</sub></span></span>
             </h2>
-            <Link href={`tel:${pro_phone}`} className="bg-[#ef9831] rounded-3xl md:text-4xl text-base font-bold text-white w-fit px-3 py-1.5 flex items-center gap-3 mb-4">
+            <Link href={`tel:${pro_phone}`} className="bg-[#FECE2F] rounded-3xl md:text-4xl text-base font-bold text-white w-fit px-3 py-1.5 flex items-center gap-3 mb-4">
               <BiPhone /> {pro_phone}
             </Link>
           </div>
@@ -85,13 +85,13 @@ export default function SProviders({ Provider, city, state }: any) {
         </div>
       </section>
 
-      <section className={`bg-[#215690] px-4 grid md:grid-cols-2 gap-7 items-center md:divide-x-2 divide-gray-300 py-5 shadow-sm border-y border-zinc-400/20 z-50  ${nav ? 'md:fixed bottom-0 left-0 right-0' : 'sticky'
+      <section className={`bg-[#6041BB] px-4 grid md:grid-cols-2 gap-7 items-center md:divide-x-2 divide-gray-300 py-5 shadow-sm border-y border-zinc-400/20 z-50  ${nav ? 'md:fixed bottom-0 left-0 right-0' : 'sticky'
         }`}>
         <div className='md:text-center text-center md:max-w-xs ml-auto md:mr-0 mx-auto flex md:flex-col flex-row gap-2'>
           <h3 className="md:text-2xl text-lg font-extrabold text-white">
             Call to order {provider_name}
           </h3>
-          <Link href={`tel:${pro_phone}`} className='md:ml-8 bg-[#ef9831] hover:bg-white hover:text-[#215690] text-white md:text-xl text-base text-center inline-block w-fit font-medium font-[Roboto] md:px-10 px-5 py-1.5 rounded-3xl'>
+          <Link href={`tel:${pro_phone}`} className='md:ml-8 bg-[#FECE2F] hover:bg-white hover:text-[#6041BB] text-white md:text-xl text-base text-center inline-block w-fit font-medium font-[Roboto] md:px-10 px-5 py-1.5 rounded-3xl'>
             {pro_phone}
           </Link>
         </div>

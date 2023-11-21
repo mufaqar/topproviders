@@ -27,23 +27,23 @@ const Provider_Nav_State = () => {
     }
 
     return (
-        <section className={`bg-[#215690] py-5 shadow-sm border-y border-zinc-400/20 !z-10 ${nav ? 'fixed top-0 left-0 right-0' : 'sticky'
+        <section className={`bg-[#6041BB] py-5 shadow-sm border-y border-zinc-400/20 !z-10 ${nav ? 'fixed top-0 left-0 right-0' : 'sticky'
             }`}>
             <div className="container mx-auto px-4">
                 <div>
                     <ul className='flex md:gap-3 gap-1.5 items-center'>
                         <li>
-                            <Link href={`${new_url}?type=internet`} className='bg-[#ef9831] hover:bg-[#215690] text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3 px-1.5 py-1.5 rounded-3xl'>
+                            <Link href={`${new_url}?type=internet`} className='bg-white text-[#6041BB] hover:bg-white/20 hover:text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3.5 px-1.5 py-2 rounded-tl-3xl rounded-br-3xl rounded-sm'>
                                 Internet Providers
                             </Link>
                         </li>
                         <li>
-                            <Link href={`${new_url}?type=tv`} className='bg-[#ef9831] hover:bg-[#215690] text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3 px-1.5 py-1.5 rounded-3xl'>
+                            <Link href={`${new_url}?type=tv`} className='bg-white text-[#6041BB] hover:bg-white/20 hover:text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3.5 px-1.5 py-2 rounded-tl-3xl rounded-br-3xl rounded-sm'>
                                 TV Providers
                             </Link>
                         </li>
                         <li>
-                            <Link href={`${new_url}?type=internet-tv`} className='bg-[#ef9831] hover:bg-[#215690] text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3 px-1.5 py-1.5 rounded-3xl'>
+                            <Link href={`${new_url}?type=internet-tv`} className='bg-white text-[#6041BB] hover:bg-white/20 hover:text-white md:text-base text-xs text-center inline-block w-full font-medium font-[Roboto] md:px-3.5 px-1.5 py-2 rounded-tl-3xl rounded-br-3xl rounded-sm'>
                                 Internet and TV Providers
                             </Link>
                         </li>

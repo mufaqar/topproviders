@@ -14,8 +14,8 @@ const Why_ChooseUs = () => {
                     </p>
                 </div>
                 <div className="mt-8 grid md:grid-cols-2 grid-cols-1 gap-7">
-                    <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                        <FaHandshake className="h-10 w-10 text-[#215690]" />
+                    <div className="block rounded-tr-[50px] rounded-bl-[50px] rounded-md border border-gray-100 p-8 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10">
+                        <FaHandshake className="h-10 w-10 text-[#6041BB]" />
                         <h2 className="mt-4 text-xl font-bold">
                             Convenience
                         </h2>
@@ -23,8 +23,8 @@ const Why_ChooseUs = () => {
                             Top Providers can simplify the task of setting up your Internet or TV service. Instead of searching individual provider sites do all your research, compare plans and order service all on one site.
                         </p>
                     </div>
-                    <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                        <FaRegClock className="h-10 w-10 text-[#215690]" />
+                    <div className="block rounded-tr-[50px] rounded-bl-[50px] rounded-md border border-gray-100 p-8 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10">
+                        <FaRegClock className="h-10 w-10 text-[#6041BB]" />
                         <h2 className="mt-4 text-xl font-bold">
                             Time Savings
                         </h2>
@@ -32,8 +32,8 @@ const Why_ChooseUs = () => {
                             Top Providers can help you save time. Enter your zip code once and compare all options available at your address.
                         </p>
                     </div>
-                    <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                        <FaMoneyBill className="h-10 w-10 text-[#215690]" />
+                    <div className="block rounded-tr-[50px] rounded-bl-[50px] rounded-md border border-gray-100 p-8 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10">
+                        <FaMoneyBill className="h-10 w-10 text-[#6041BB]" />
                         <h2 className="mt-4 text-xl font-bold">
                             Cost Savings
                         </h2>
@@ -41,8 +41,8 @@ const Why_ChooseUs = () => {
                             Instead of tracking offers from multiple provider websites, compare current prices in real time at Top Providers and get the best deal that fit your budget.
                         </p>
                     </div>
-                    <div className="block rounded-xl border border-gray-100 p-8 shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10">
-                        <FaUserTie className="h-10 w-10 text-[#215690]" />
+                    <div className="block rounded-tr-[50px] rounded-bl-[50px] rounded-md border border-gray-100 p-8 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10">
+                        <FaUserTie className="h-10 w-10 text-[#6041BB]" />
                         <h2 className="mt-4 text-xl font-bold">
                             Expert Advice
                         </h2>

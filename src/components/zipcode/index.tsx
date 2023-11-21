@@ -92,7 +92,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div>
                         <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">
-                            {formatType(type)}  Service Providers in  <br /><span className="text-[#ef9831]">{zipcode}</span>
+                            {formatType(type)}  Service Providers in  <br /><span className="text-[#FECE2F]">{zipcode}</span>
                         </h1>
                         <p className="text-xl text-center font-[Roboto] my-5">
                             Enter your zip so we can find the best providers in your area:
@@ -108,7 +108,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div className='mb-10'>
                         <h2 className="text-2xl font-bold  capitalize leading-10">
-                            {formatType(type)}  Service Providers in <span className="text-[#ef9831]">{zipcode}</span>
+                            {formatType(type)}  Service Providers in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
                     </div>
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-28 mt-28'>
@@ -148,7 +148,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div className=''>
                         <h2 className="text-2xl font-bold">
-                            Overview of {formatType(type)}  Service Providers in <span className="text-[#ef9831]">{zipcode}</span>
+                            Overview of {formatType(type)}  Service Providers in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
                         <OverView uniqueServiceType={uniqueServiceType} type={type} city={zipcode} state={state} allProviders={allProviders} />
                     </div>
@@ -160,12 +160,12 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                     <div className="container mx-auto px-4">
                         <div className='mb-10'>
                             <h2 className="text-2xl font-bold  capitalize leading-10">
-                                Cheap {formatType(type)}  Service Providers in <span className="text-[#ef9831]">{zipcode}</span>
+                                Cheap {formatType(type)}  Service Providers in <span className="text-[#FECE2F]">{zipcode}</span>
                             </h2>
                             <p className='text-xl font-[Roboto] mt-5'>Affordability is essential when choosing an {formatType(type)}  service provider; in an age where staying connected is more crucial than ever, we bring you budget-friendly options that don't compromise on quality. Below are the cheap {formatType(type)}  service providers in {zipcode}.</p>
                         </div>
 
-                        <div className={`md:w-full min-w-fit grid grid-cols-2 bg-[#215690]`}>
+                        <div className={`md:w-full min-w-fit grid grid-cols-2 bg-[#6041BB]`}>
                             <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                                 <div>
                                     <h4 className="md:text-base text-xs text-center text-white">
@@ -216,12 +216,12 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                     <div className="container mx-auto px-4">
                         <div className='mb-10'>
                             <h2 className="text-2xl font-bold  capitalize leading-10">
-                                Fast  {formatType(type)}  Service Providers in <span className="text-[#ef9831]">{zipcode}</span>
+                                Fast  {formatType(type)}  Service Providers in <span className="text-[#FECE2F]">{zipcode}</span>
                             </h2>
                             <p className='text-xl font-[Roboto] mt-5'>If speed is your top priority consider the following {formatType(type)}  service providers in  {zipcode}.</p>
                         </div>
 
-                        <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#215690] ${type === 'internet-tv' ? ' md:grid-cols-2' : ' md:grid-cols-2'} `}>
+                        <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#6041BB] ${type === 'internet-tv' ? ' md:grid-cols-2' : ' md:grid-cols-2'} `}>
                             <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                                 <div>
                                     <h4 className="md:text-base text-xs text-center text-white">
@@ -279,14 +279,14 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div className='mb-10'>
                         <h2 className="text-2xl font-bold">
-                            Summary of {formatType(type)}  service providers in <span className="text-[#ef9831]">{zipcode}</span>
+                            Summary of {formatType(type)}  service providers in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
                     </div>
                     <div>
 
                         <div className=" w-full lg:max-w-[1200px] mx-auto h-auto mb-6">
                             <div className="w-full h-auto shadow-xl border rounded-t-md rounded-b-md flex md:flex-col flex-row items-stretch">
-                                <div className={`md:w-full min-w-[50px] grid ${type === 'tv' ? 'md:grid-cols-7' : 'md:grid-cols-8'} grid-cols-1 bg-[#215690] `}>
+                                <div className={`md:w-full min-w-[50px] grid ${type === 'tv' ? 'md:grid-cols-7' : 'md:grid-cols-8'} grid-cols-1 bg-[#6041BB] `}>
                                     <div className="md:border-r border-r-0 md:border-b-0 border-b grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                                         <div>
                                             <h4 className="md:text-base text-xs text-center text-white">
@@ -368,7 +368,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div className='mb-10'>
                         <h2 className="text-2xl font-bold">
-                            Types of {formatType(type)}  Technologies available in <span className="text-[#ef9831]">{zipcode}</span>
+                            Types of {formatType(type)}  Technologies available in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
                         <p className='text-base'>
                             As of the time this page was written, {zipcode} likely have several types of {formatType(type)}  technologies available to its residents. These technologies include

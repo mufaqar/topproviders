@@ -62,25 +62,25 @@ export default function Home({ BlogPosts }: any) {
                </div>
                <div className='relative grid gap-7 lg:grid-cols-4 md:grid-cols-2 mb-10'>
                   <ServiceBox
-                     img={<HiOutlineSearchCircle className="text-6xl text-[#215690] mx-auto" />}
+                     img={<HiOutlineSearchCircle className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Search "
                      content="Find providers in your area with a simple zip code search."
                      custm_Bg="bg-[#e7e2fe]"
                   />
                   <ServiceBox
-                     img={<BiGitCompare className="text-6xl text-[#215690] mx-auto" />}
+                     img={<BiGitCompare className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Compare Top Providers"
                      content="Compare dozens of top TV and internet providers like AT&T and Xfinity to find the best high speed options in minutes."
                      custm_Bg="bg-[#fbf1e2]"
                   />
                   <ServiceBox
-                     img={<HiOutlineShoppingCart className="text-6xl text-[#215690] mx-auto" />}
+                     img={<HiOutlineShoppingCart className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Compare Bundle Deals"
                      content="Bundle internet and TV with our user-friendly zip search. Compare the best deals available near you in one place."
                      custm_Bg="bg-[#ffdbce]"
                   />
                   <ServiceBox
-                     img={<BsSpeedometer className="text-6xl text-[#215690] mx-auto" />}
+                     img={<BsSpeedometer className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Calculate Your Speed"
                      content="Don’t pay for more than you need! Use our Internet Speed Quiz to determine the best internet speed for your lifestyle."
                      custm_Bg="bg-[#e8ebe4]"
@@ -97,13 +97,13 @@ export default function Home({ BlogPosts }: any) {
                <div className='grid md:grid-cols-3 grid-cols-1 gap-7 items-center'>
                   <div className='grid gap-8'>
                      <CompareBox
-                        img={<AiOutlineClockCircle className="text-5xl text-[#215690] mx-auto" />}
+                        img={<AiOutlineClockCircle className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Save Time"
                         content="Discover top providers near you in seconds by using our zip search tool. Filter plans based on internet, TV, bundles, and more."
                         custm_Bg="bg-[#e7e2fe]"
                      />
                      <CompareBox
-                        img={<FaHandsHelping className="text-5xl text-[#215690] mx-auto" />}
+                        img={<FaHandsHelping className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Helpful Tools"
                         content="Our Resource Center offers helpful insights and advice from subject matter experts to help you get the most out of your services."
                         custm_Bg="bg-[#fbf1e2]"
@@ -115,13 +115,13 @@ export default function Home({ BlogPosts }: any) {
                   </div>
                   <div className='grid gap-8'>
                      <CompareBox
-                        img={<GiMoneyStack className="text-5xl text-[#215690] mx-auto" />}
+                        img={<GiMoneyStack className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Save Money"
                         content="Compare prices in real-time and find the best deals available to fit your budget and digital needs."
                         custm_Bg="bg-[#ffdbce]"
                      />
                      <CompareBox
-                        img={<FaUserGraduate className="text-5xl text-[#215690] mx-auto" />}
+                        img={<FaUserGraduate className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Get Expert Advice"
                         content="Our team of experts reviews providers on various criteria like performance and price to recommend the best options near you."
                         custm_Bg="bg-[#e8ebe4]"
@@ -136,7 +136,7 @@ export default function Home({ BlogPosts }: any) {
                <h2 className='md:text-6xl text-2xl font-bold text-center text-white mb-10'>
                   Find Internet Providers by State
                </h2>
-               <div className='w-[524px] mx-auto mb-3'>
+               <div className='max-w-[524px] mx-auto mb-3'>
                   <SearchForm />
                </div>
                {/* <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' /> */}
@@ -153,7 +153,7 @@ export default function Home({ BlogPosts }: any) {
                   <p className='text-lg font-normal text-[#4E4E4E] mb-5'>
                      Let us help you sift through the noise by comparing the top providers near you. Find high-speed options for internet, TV, or bundles that meet your needs.
                   </p>
-                  <Link href="#" className='text-sm font-normal AxiformaRegular bg-[#F15A25] text-white py-3 px-12 rounded-[3px] '>
+                  <Link href="#" className='text-sm font-normal AxiformaRegular bg-[#FECE2F] text-white py-3 px-12 rounded-[3px] '>
                      View All
                   </Link>
                </div>

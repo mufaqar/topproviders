@@ -99,7 +99,7 @@ function TVProviders({ allProviders }: any) {
                         <h2 className='text-3xl font-bold'>
                             What to read next
                         </h2>
-                        <Link href="/blog" className='px-5 py-2 text-base text-center block bg-[#ef9831] hover:bg-[#215690] text-white w-fit'>
+                        <Link href="/blog" className='px-5 py-2 text-base text-center block bg-[#FECE2F] hover:bg-[#6041BB] text-white w-fit'>
                             Read more
                         </Link>
                     </div>

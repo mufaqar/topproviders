@@ -34,7 +34,7 @@ export default function Faqs_Zip({ zipcode, city, type, allProviders, totalProvi
             {type === "internet" &&
                 <>
                     <h2 className="text-2xl font-bold">
-                        Internet FAQ’s in   <span className=" uppercase"> <span className="  text-[#ef9831] uppercase">{zipcode} </span> </span>
+                        Internet FAQ’s in   <span className=" uppercase"> <span className="  text-[#FECE2F] uppercase">{zipcode} </span> </span>
                     </h2>
                     <div className="w-full h-fit border border-[#F0F0F0] rounded-[10px] p-[30px] shadow-[0_15px_15px_rgba(0,0,0,0.05)]">
                         <div className="">
@@ -147,7 +147,7 @@ export default function Faqs_Zip({ zipcode, city, type, allProviders, totalProvi
             {type === "tv" &&
                 <>
                     <h2 className="text-2xl font-bold">
-                        TV FAQ’s in  <span className=" uppercase"> <span className="  text-[#ef9831] uppercase">{zipcode} </span> </span>          </h2>
+                        TV FAQ’s in  <span className=" uppercase"> <span className="  text-[#FECE2F] uppercase">{zipcode} </span> </span>          </h2>
 
                     <div className="w-full h-fit border border-[#F0F0F0] rounded-[10px] p-[30px] shadow-[0_15px_15px_rgba(0,0,0,0.05)]">
                         <div className="">
@@ -252,7 +252,7 @@ export default function Faqs_Zip({ zipcode, city, type, allProviders, totalProvi
             {type === "internet-tv" &&
                 <>
                     <h2 className="text-2xl font-bold">
-                        Internet and TV FAQ’s in  <span className=" uppercase"> <span className="  text-[#ef9831] uppercase">{zipcode} </span> </span> </h2>
+                        Internet and TV FAQ’s in  <span className=" uppercase"> <span className="  text-[#FECE2F] uppercase">{zipcode} </span> </span> </h2>
 
                     <div className="w-full h-fit border border-[#F0F0F0] rounded-[10px] p-[30px] shadow-[0_15px_15px_rgba(0,0,0,0.05)]">
                         <div className="">

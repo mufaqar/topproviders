@@ -109,7 +109,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div >
             <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">
-              {formatType(type)}  Service Providers in <br /><span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+              {formatType(type)}  Service Providers in <br /><span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h1>
             <p className="text-xl text-center font-[Roboto] my-5">
               Enter your zip so we can find the best providers in your area:
@@ -127,7 +127,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold  capitalize leading-10">
-              {formatType(type)} Service Providers in <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+              {formatType(type)} Service Providers in <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
           </div>
           <div className='grid gap-7'>
@@ -175,7 +175,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className=''>
             <h2 className="text-2xl font-bold">
-              Overview of Internet Service Providers in <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+              Overview of Internet Service Providers in <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
 
             <OverView uniqueServiceType={uniqueServiceType} type={type} city={city} state={state} allProviders={allProviders} />
@@ -189,12 +189,12 @@ export default function Cities_com({ my_city, allProviders }: any) {
           <div className="container mx-auto px-4">
             <div className='mb-10'>
               <h2 className="text-2xl font-bold  capitalize leading-10">
-                Cheap  {formatType(type)} Service Providers in <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+                Cheap  {formatType(type)} Service Providers in <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
               </h2>
               <p className='text-xl font-[Roboto] mt-5'>Affordability is essential when choosing an  {formatType(type)} service provider. Below are the cheap {type} service providers in {state}.</p>
             </div>
 
-            <div className={`md:w-full min-w-fit grid grid-cols-2 bg-[#215690]`}>
+            <div className={`md:w-full min-w-fit grid grid-cols-2 bg-[#6041BB]`}>
               <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                 <div>
                   <h4 className="md:text-base text-xs text-center text-white">
@@ -240,12 +240,12 @@ export default function Cities_com({ my_city, allProviders }: any) {
             <div className='mb-10'>
               <h2 className="text-2xl font-bold  capitalize leading-10">
 
-                Fastest {formatType(type)} Service Providers In <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+                Fastest {formatType(type)} Service Providers In <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
               </h2>
               <p className='text-xl font-[Roboto] mt-5'>If speed is your top priority consider the following {type} service providers in <span className='uppercase'>{state}</span></p>
             </div>
 
-            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#215690]`}>
+            <div className={`md:w-full min-w-fit grid  grid-cols-2 bg-[#6041BB]`}>
               <div className="border-r grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                 <div>
                   <h4 className="md:text-base text-xs text-center text-white">
@@ -293,14 +293,14 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold">
-              Summary of Internet service providers in  <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+              Summary of Internet service providers in  <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
           </div>
           <div>
 
             <div className=" w-full lg:max-w-[1200px] mx-auto h-auto mb-6">
               <div className="w-full h-auto shadow-xl border rounded-t-md rounded-b-md flex md:flex-col flex-row items-stretch">
-                <div className={`md:w-full min-w-[50px] grid ${type === 'internet-tv' ? 'md:grid-cols-8' : 'md:grid-cols-7'} grid-cols-1 bg-[#215690] `}>
+                <div className={`md:w-full min-w-[50px] grid ${type === 'internet-tv' ? 'md:grid-cols-8' : 'md:grid-cols-7'} grid-cols-1 bg-[#6041BB] `}>
                   <div className="md:border-r border-r-0 md:border-b-0 border-b grid justify-center md:p-5 p-2 md:h-auto h-[120px] items-center">
                     <div>
                       <h4 className="md:text-base text-xs text-center text-white">
@@ -396,7 +396,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold mb-2">
-              Types of internet Technologies available in  <span className="text-[#ef9831] ">{city}, <span className='uppercase'>{state}</span></span>
+              Types of internet Technologies available in  <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
             <p className='text-base'>
               As of the time this page was written, likely have several types of internet technologies available to its residents. These technologies include    {

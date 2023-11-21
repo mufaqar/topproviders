@@ -6,7 +6,7 @@ export const ProviderCardState = ({ item, type, offer, count }: any) => {
     return (
         <>
             <div className="w-full h-auto shadow-xl border rounded-t-md rounded-b-md flex flex-col">
-                <div className="md:w-full min-w-fit  bg-[#215690] flex justify-between items-center ">
+                <div className="md:w-full min-w-fit  bg-[#6041BB] flex justify-between items-center ">
                     <h2 className="text-base font-bold text-center text-white p-5"> <span> {count + 1} </span>-  {item.provider}</h2>
                     <h2 className="text-base font-bold text-center text-white p-5">{offer}</h2>
                 </div>
@@ -49,7 +49,7 @@ export const ProviderCardState = ({ item, type, offer, count }: any) => {
                             {
                                 features?.map((feature: any, idx: number) => (
                                     <li className="flex gap-2 items-center" key={idx}>
-                                        <svg className="min-w-[1rem] h-4  text-[#ef9831] font-extrabold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="min-w-[1rem] h-4  text-[#FECE2F] font-extrabold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M5 13l4 4L19 7" ></path>
                                         </svg>
                                         <span className="text-sm">
@@ -64,13 +64,13 @@ export const ProviderCardState = ({ item, type, offer, count }: any) => {
                         <div>
                             <h5 className="text-center md:text-base text-xs font-bold">Pricing starts from</h5>
                             <p className="text-center md:text-xs text-xs">
-                                <span className="font-extrabold text-[#215690] font-[Roboto] text-xl"> ${item?.price} </span> /mo.
+                                <span className="font-extrabold text-[#6041BB] font-[Roboto] text-xl"> ${item?.price} </span> /mo.
                             </p>
                         </div>
                     </div>
                     <div className="grid gap-3 items-center justify-center p-5">
 
-                        <Link href={`/providers/${item.slug}`} className="text-base text-white font-[Roboto] uppercase px-5 py-2.5 bg-[#ef9831] hover:bg-[#215690]">View Plans</Link>
+                        <Link href={`/providers/${item.slug}`} className="text-base text-white font-[Roboto] uppercase px-5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB]">View Plans</Link>
                     </div>
                 </div>
             </div>

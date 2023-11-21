@@ -83,7 +83,7 @@ function Contact_Us() {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-center w-full">
-                                    <input type='submit' className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-[#ef9831] hover:bg-[#215690]" value={sending ? 'SENDING...' : `SUBMIT`} />
+                                    <input type='submit' className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-[#FECE2F] hover:bg-[#6041BB]" value={sending ? 'SENDING...' : `SUBMIT`} />
                                 </div>
                             </form>
                         </div>

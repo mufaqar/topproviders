@@ -44,26 +44,26 @@ function Providers({ allProviders }: any) {
                         Featured Providers
                     </h2>
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
-                        <Link href="/providers/att" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                        <Link href="/providers/att" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
                             <Image src='/images/logo/att.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
                             <h2 className="mt-4 text-lg  text-center">
                                 AT&T
 
                             </h2>
                         </Link>
-                        <Link href="/providers/spectrum" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                        <Link href="/providers/spectrum" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
                             <Image src='/images/logo/Spectrum.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
                             <h2 className="mt-4 text-lg  text-center">
                                 SPECTRUM
                             </h2>
                         </Link>
-                        <Link href="/providers/earthlink" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                        <Link href="/providers/earthlink" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
                             <Image src='/images/logo/EarthLink.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
                             <h2 className="mt-4 text-lg  text-center">
                                 EARTHLINK
                             </h2>
                         </Link>
-                        <Link href="/providers/hughesnet" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#215690]/10 hover:shadow-[#215690]/10 bg-white">
+                        <Link href="/providers/hughesnet" className="flex flex-col justify-center items-center border border-gray-100 p-3 h-56 rounded-tl-[80px] rounded-tr-[3px] rounded-bl-[3px] rounded-br-[80px] shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
                             <Image src='/images/logo/HughesNet.jpg' alt="Feature" width={140} height={50} className='mx-auto' />
                             <h2 className="mt-4 text-lg  text-center">
                                 HUGHESNET

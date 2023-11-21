@@ -303,6 +303,6 @@ h6 {
   border-radius: 50%;
   box-sizing: border-box;
   border: 28px solid #ccc;     /* half gray, */
-  border-bottom-color: #EF9831;  /* half azure */
-  border-right-color: #EF9831;
+  border-bottom-color: #FECE2F;  /* half azure */
+  border-right-color: #FECE2F;
 }
