@@ -6,51 +6,41 @@ import PageHead from '@/components/metas/pagesmeta';
 function About_Us() {
     return (
         <>
-          
+
             <PageHead title="About Us | Top Providers" description="Here at Top Providers, we make it easy to search, compare and order Internet and TV service providers. Call 833-592-0098 to learn more." url="https://www.topproviders.net/about-us" />
-      
+
             <PageBanner title="About Us" />
             <section className="py-16">
                 <div className='container mx-auto px-4'>
                     <div className="">
                         <h2 className='md:text-4xl text-2xl font-bold'>
-                            What We Do
+
+                            Our Mission
                         </h2>
                         <p className='text-xl font-normal my-4'>
-                            The abundance of internet, TV, and bundle options can be overwhelming. Our aim is to simplify your decision-making process. At topproviders.net, we provide a one stop solution for internet and TV providers, whether you're seeking bundle comparisons or determining the ideal speeds for your daily online activities.
-                            We are here to assist you in comparing internet and TV providers within your locality, ensuring that you're well-informed before making a financial commitment
+
+                            Navigating through the multitude of internet, TV, and bundle options can be daunting. We strive to simplify your decision-making process. At topproviders.net, we offer a streamlined solution for internet and TV services. Whether you're looking for bundle comparisons or determining the optimal speeds for your daily online activities, we're here to help. Our goal is to assist you in evaluating internet and TV providers in your area, ensuring that you make an informed decision before committing financially.
                         </p>
                     </div>
                     <div className="">
                         <h2 className='md:text-4xl text-2xl font-bold'>
-                            How We Make Money
+                            How We Sustain Our Platform
                         </h2>
                         <p className='text-xl font-normal my-4'>
-                            To uphold an ad-free experience for you, we sustain our platform by forming affiliate partnerships with Internet and TV providers, as well as other links showcased on our website. While this might occasionally impact the providers we highlight and their positioning on our site, please be assured that it has no bearing on the impartial information we provide for user comparison.
+                            In order to maintain an ad-free experience for you, we support our platform through affiliate partnerships with Internet and TV providers, as well as other links featured on our website. While this may occasionally influence the providers we showcase and their placement on our site, rest assured that it does not compromise the impartiality of the information we provide for user comparison.
                         </p>
                     </div>
                     <div className="">
                         <h2 className='md:text-4xl text-2xl font-bold'>
-                            How We Rank Our Providers
+                            Our Provider Ranking Criteria
                         </h2>
                         <p className='text-xl font-normal my-4'>
-                            We aim to provide you with comprehensive choices, which is why we feature all major TV providers on our website. Our reviews consider aspects like availability, reliability, customer support, user feedback, and overall value for your money. We believe that these insights will empower you to make the best decision for your needs.
-                        </p>
+
+                            We strive to present you with a comprehensive array of choices, which is why we include all major TV providers on our website. Our reviews take into account factors such as availability, reliability, customer support, user feedback, and overall value for your money. We believe that these insights will empower you to make the optimal decision based on your specific needs.    </p>
                     </div>
                 </div>
             </section>
-            <section className="py-16 bg-[#F3FAFF]">
-                <div className='container mx-auto px-4 my-10 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
-                    <div className="">
-                        <h2 className='md:text-4xl text-2xl font-extrabold leading-normal md:text-start text-center'>
-                            Find Internet and TV Service Providers
-                        </h2>
-                    </div>
-                    <div className='flex items-center md:justify-end justify-center [&>div:nth-child(1)]:md:mr-0 [&>div:nth-child(1)]:w-fit'>
-                        <SearchForm />
-                    </div>
-                </div>
-            </section>
+
         </>
     )
 }

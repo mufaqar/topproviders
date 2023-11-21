@@ -280,7 +280,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold">
-              Summary of  {formatType(type)} service providers in  {state}
+              Summary of Top  {formatType(type)} service providers in  {state}
             </h2>
           </div>
           <div>

@@ -279,7 +279,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                 <div className="container mx-auto px-4">
                     <div className='mb-10'>
                         <h2 className="text-2xl font-bold">
-                            Summary of {formatType(type)}  service providers in <span className="text-[#FECE2F]">{zipcode}</span>
+                            Summary of Top {formatType(type)}  service providers in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
                     </div>
                     <div>

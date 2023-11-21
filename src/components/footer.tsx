@@ -13,6 +13,8 @@ const Footer = () => {
             <Image src="/images/logo-white.png" alt="logo-white" height={55} width={265} />
           </Link>
 
+          <p className='text-white text-base '>Simplify choices with Topproviders.net! Streamlined solutions for internet and TV services. Unbiased reviews empower informed decisions. Connect with confidence</p>
+
           <ul className='flex gap-5 mt-5'>
             <li>
               <Link href="https://www.facebook.com/topproviders.net">
@@ -72,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='px-4 mt-16 pt-4 border-t border-white/20'>
-        <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
+        <div className='container mx-auto flex md:flex-row flex-col-reverse items-center justify-between'>
           <p className='text-sm font-normal text-white AxiformaRegular'>
             Copyright © 2023 topproviders.net. All rights reserved.
           </p>

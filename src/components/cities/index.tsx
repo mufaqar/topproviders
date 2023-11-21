@@ -293,7 +293,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
         <div className="container mx-auto px-4">
           <div className='mb-10'>
             <h2 className="text-2xl font-bold">
-              Summary of Internet service providers in  <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
+              Summary of Top Internet service providers in  <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
           </div>
           <div>
