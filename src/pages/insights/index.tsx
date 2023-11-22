@@ -1,9 +1,16 @@
 import Campare_Plan from '@/components/campare-plan'
+import apolloClient from '@/config/client'
+import { SINGLE_Provider } from '@/config/query'
+import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
 
-function Insight() {
+function Insight({ ProviderOneD, ProviderTwoD }: any) {
+  console.log("🚀 ~ file: index.tsx:10 ~ Insight ~ ProviderOneD:", ProviderOneD, ProviderTwoD)
+  var featuresOne = ProviderOneD?.providersInfo?.features?.split(', ');
+  console.log("🚀 ~ file: index.tsx:12 ~ Insight ~ featuresOne:", featuresOne)
+
   return (
     <main>
       <section className='py-24 bg-[#6041BB]'>
@@ -15,13 +22,13 @@ function Insight() {
           </div>
           <div className='grid grid-cols-3 gap-7 items-center'>
             <div className="flex flex-col justify-center items-center border border-gray-100 rounded-2xl md:h-40 md:w-40 h-20 w-20 -rotate-45 shadow-[0_0_5px_10px_rgba(255,255,255,0.15)] transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
-              <Image src='/images/logo/att.jpg' alt="Feature" width={93} height={50} className='mx-auto rotate-45' />
+              <Image src={ProviderOneD.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mx-auto rotate-45' />
             </div>
             <p className='sm:text-5xl text-4xl font-extrabold text-white text-center'>
               VS
             </p>
             <div className="flex flex-col justify-center items-center border border-gray-100 rounded-2xl md:h-40 md:w-40 h-20 w-20 -rotate-45 shadow-[0_0_5px_10px_rgba(255,255,255,0.15)] transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white">
-              <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='mx-auto rotate-45' />
+              <Image src={ProviderTwoD?.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mx-auto rotate-45' />
             </div>
           </div>
         </div>
@@ -33,32 +40,14 @@ function Insight() {
           </p>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-7 mt-10'>
             <div className="border border-gray-100 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white p-10 rounded-2xl">
-              <Image src='/images/logo/att.jpg' alt="Feature" width={93} height={50} className='mb-8' />
+              <Image src={ProviderOneD.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mb-8' />
               <ul className='grid gap-2'>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Variety of plans
-                </li>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Wide availability
-                </li>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Fiber internet speeds
-                </li>
+                <div dangerouslySetInnerHTML={{__html: ProviderOneD?.providersInfo?.features}}/>
               </ul>
             </div>
             <div className="border border-gray-100 shadow-xl transition hover:border-[#6041BB]/10 hover:shadow-[#6041BB]/10 bg-white p-10 rounded-2xl">
-              <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='mb-8' />
-              <ul className='grid gap-2'>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Variety of plans
-                </li>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Wide availability
-                </li>
-                <li className='text-base font-normal flex gap-2 items-center'>
-                  <FaCheck /> Fiber internet speeds
-                </li>
-              </ul>
+              <Image src={ProviderTwoD?.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mb-8' />
+              <div dangerouslySetInnerHTML={{__html: ProviderOneD?.providersInfo?.features}}/>
             </div>
           </div>
         </div>
@@ -68,7 +57,7 @@ function Insight() {
           <h2 className="md:text-3xl text-xl font-bold leading-7 mb-10">
             Internet Plans
           </h2>
-          <Campare_Plan />
+          <Campare_Plan ProviderOneD={ProviderOneD} ProviderTwoD={ProviderTwoD}/>
         </div>
       </section>
     </main>
@@ -76,3 +65,20 @@ function Insight() {
 }
 
 export default Insight
+
+
+
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
+  const { providerOne, providerTwo } = query;
+  const [providersOneRes, providersTwoRes] = await Promise.all([
+    apolloClient.query({ query: SINGLE_Provider, variables: { slug: `/providers/${providerOne}` } }),
+    apolloClient.query({ query: SINGLE_Provider, variables: { slug: `/providers/${providerTwo}` } }),
+  ]);
+  const ProviderOneD = providersOneRes.data.singleProvider;
+  const ProviderTwoD = providersTwoRes.data.singleProvider;
+  return {
+    props: {
+      ProviderOneD, ProviderTwoD
+    },
+  };
+}

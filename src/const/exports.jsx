@@ -27,7 +27,7 @@ export const Services_data = [
 
 export const Providers_Data = [
   {
-    name: 'Spectrum ',
+    name: 'Spectrum',
     link: '/providers/spectrum',
   },
   {
