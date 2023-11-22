@@ -1,0 +1,66 @@
+import React from 'react'
+import useInternetHandler from './useInternetHandler'
+import { ProviderCardState } from '@/components/provider/provider-card-state'
+import { GetServerSideProps } from 'next'
+import { ProvidersByServiceType } from '@/config/query'
+import apolloClient from '@/config/client'
+import ProsAndCons from '@/components/pros-and-cons/pros-and-cons'
+import ProvidersCompare from '@/components/compare/providers-compare'
+import ProviderDesign from '@/components/ProviderDesign'
+
+const InternetType = ({ allProviders }: any) => {
+     const { year, type, createData, topProvider } = useInternetHandler()
+     const t = topProvider(allProviders)
+
+     return (
+          <section className='container mx-auto px-3 my-20'>
+               <h1 className="sm:text-5xl text-2xl font-bold capitalize leading-10">
+                    Best {type} Internet Providers <span className="text-[#ef9831] uppercase">{year}</span>
+               </h1>
+               <div className='grid gap-6 mt-10'>
+                    {
+                         allProviders?.map((item: any, idx: number) => {
+                              const summaryData = createData(item)
+
+                              return (
+                                   <>
+                                        <ProviderCardState key={idx} count={idx} type={type} item={summaryData} offer={item.providersInfo?.proOffer} />
+                                   </>
+                              )
+                         })
+                    }
+               </div>
+               <h2 className="sm:text-3xl mt-10 text-2xl font-bold capitalize leading-10">
+                    What is {type} Internet?
+               </h2>
+               <p className='mt-3'>{type} internet transfers data through glass, fiber-optic cables, which makes it capable of moving information at the speed of light. {type} offers the fastest internet speeds and supports the most device connectivity among connection types. However, {type} has limited availability compared to DSL and cable internet, but providers continue to invest in {type} internet.</p>
+               <h2 className="sm:text-3xl mt-10 text-2xl font-bold capitalize leading-10">
+                    What is {type} Internet?
+               </h2>
+               <p className='mt-3'>{type} internet is the most superior connection type in terms of speed and capacity. It’s one shortfall is lack of availability. However, providers continue to expand their networks. With faster speeds to support multiple connected devices and heavy usage, {type} offers reliable internet access without common headaches such as dead spots, buffering, and ISP throttling. However, due to its higher cost and limited availability, it isn’t for everyone.</p>
+               <ProsAndCons/>
+               <ProvidersCompare type={type} providers={allProviders}/>
+               <h2 className="sm:text-3xl mt-10 mb-7 text-2xl font-bold capitalize leading-10">
+                    Our Top {type} Picks
+               </h2>
+               <ProviderDesign tProvider={t}/>
+          </section>
+     )
+}
+
+export default InternetType
+
+
+
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
+     const { type } = query;
+     const [providesByservice] = await Promise.all([
+          apolloClient.query({ query: ProvidersByServiceType, variables: { id: type } }),
+     ]);
+     const res = providesByservice.data.serviceType?.allProviders?.nodes;
+     return {
+          props: {
+               allProviders: res
+          },
+     };
+}
