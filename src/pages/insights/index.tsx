@@ -7,9 +7,7 @@ import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
 
 function Insight({ ProviderOneD, ProviderTwoD }: any) {
-  console.log("🚀 ~ file: index.tsx:10 ~ Insight ~ ProviderOneD:", ProviderOneD, ProviderTwoD)
   var featuresOne = ProviderOneD?.providersInfo?.features?.split(', ');
-  console.log("🚀 ~ file: index.tsx:12 ~ Insight ~ featuresOne:", featuresOne)
 
   return (
     <main>
