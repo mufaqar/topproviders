@@ -79,11 +79,7 @@ const Footer = () => {
             Copyright © 2023 topproviders.net. All rights reserved.
           </p>
           <ul className='flex items-center md:gap-5 gap-2 text-white'>
-            <li>
-              <Link href="#" className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
-                Sitemap
-              </Link>
-            </li>
+            
             <li>-</li>
             <li>
               <Link href="#" className='text-sm font-medium capitalize text-white AxiformaRegular hover:text-white'>
