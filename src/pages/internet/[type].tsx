@@ -13,7 +13,6 @@ import CompareConectionTypes from '@/components/compareConectionTypes'
 const InternetType = ({ allProviders }: any) => {
      const { year, type, createData, topProvider } = useInternetHandler()
      const t = topProvider(allProviders)
-     console.log("🚀 ~ file: [type].tsx:14 ~ InternetType ~ t:", t)
 
      return (
           <section className='container mx-auto px-3 my-20'>
