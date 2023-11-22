@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react'
 import { CiStar } from "react-icons/ci";
 
-const ProviderDesign = ({ tProvider }: any) => {
+const ProviderDesign = ({ tProvider, icon, title }: any) => {
   const { createData } = useInternetHandler()
   const summaryData = createData(tProvider)
   var features = summaryData?.summery?.split(', ');
@@ -13,15 +13,14 @@ const ProviderDesign = ({ tProvider }: any) => {
     <div className='rounded-2xl overflow-hidden shadow-xl'>
       <div className=''>
         <div className='bg-blue-100 p-4 text-2xl flex items-center gap-2 font-medium'>
-          <div className='bg-[#EF9831] p-1 rounded-lg'><CiStar className="text-4xl text-white" /></div> 
-          Highest speed stability
+          <div className='bg-[#EF9831] p-1 rounded-lg text-4xl text-white'>{icon}</div> 
+          {title}
           </div>
       </div>
-      <div className='grid grid-cols-5 p-4'>
-        <div>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5 lg:grid-cols-5 p-4'>
+        <div className='flex justify-center items-center flex-col'>
           <Link href={`/providers/${summaryData.slug}`} target="_blank" >    <Image src={summaryData.logo} alt="Feature Image" width={250} height={100} /></Link>
         </div>
-
         <ul className="grid items-center justify-center pt-2">
           {
             features?.map((feature: any, idx: number) => (
@@ -38,7 +37,7 @@ const ProviderDesign = ({ tProvider }: any) => {
         </ul>
         <div className='flex flex-col items-center justify-center'>
           <h5 className="text-center md:text-base text-xs font-bold">Speed from</h5>
-          <div className="flex text-lg text-gray-700"><div dangerouslySetInnerHTML={{ __html: (summaryData?.speed)?.replace('-', '<sub> Mbps</sub> - ') }} /><sub className='mt-3 ml-[2px]'>Mbps</sub></div>
+          <div className="flex text-lg text-gray-700"><div dangerouslySetInnerHTML={{ __html: (summaryData?.speed)?.replace('-', '<sub> Mbps</sub> - ') }} /><sub className='mt-4 ml-[2px]'>Mbps</sub></div>
         </div>
         <div className='flex flex-col items-center justify-center'>
           <h5 className="text-center md:text-base text-xs font-bold">Pricing starts from</h5>
