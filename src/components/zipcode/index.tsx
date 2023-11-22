@@ -85,7 +85,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
     return (
         <>
 
-        <PageHead title={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city} , ${state} `} description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city}, ${state} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
+            <PageHead title={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city} , ${state} `} description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city}, ${state} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
                 `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.topproviders.net/${state_code}/${city_code}?zipcode=${zipcode}&type=${type}`} />
 
             <section className="min-h-[40vh]  flex items-center bg-gray-50">
@@ -364,13 +364,17 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                     </div>
                 </div>
             </section>
-            <section className="my-16">
-                <div className="container mx-auto px-4">
-                    <div className='mb-10'>
-                        <h2 className="text-2xl font-bold">
+
+            <section className="py-16 bg-[#6041BB]">
+                <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 ">
+                    <div>
+                        <Image src="/images/technology-bg.jpg" alt="technology-bg" width={570} height={375} className='rounded-2xl h-full w-full object-cover' />
+                    </div>
+                    <div>
+                        <h2 className="text-2xl font-bold text-white mb-3">
                             Types of {formatType(type)}  Technologies available in <span className="text-[#FECE2F]">{zipcode}</span>
                         </h2>
-                        <p className='text-base'>
+                        <p className='text-base text-white'>
                             As of the time this page was written, {zipcode} likely have several types of {formatType(type)}  technologies available to its residents. These technologies include
                             {
                                 uniqueServiceType.map((t: any, i: number) => (
@@ -379,22 +383,22 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
                                 ))
                             }
                         </p>
-                    </div>
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
-                        {
-                            uniqueServiceType.map((t: any, i: number) => (
-                                <Technology_Box
-                                    icon={<MdCable />}
-                                    title={t.name}
-                                    key={i}
-                                    content={t.description}
-
-                                />
-                            ))
-                        }
+                        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                            {
+                                uniqueServiceType.map((t: any, i: number) => (
+                                    <Technology_Box
+                                        icon={<MdCable />}
+                                        title={t.name}
+                                        key={i}
+                                        content={t.description}
+                                    />
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </section>
+                        
             <section className="my-16">
                 <div className="container mx-auto px-4 grid gap-10">
                     <Faqs_Zip city={city} state={state} zipcode={zipcode} type={type} allProviders={allProviders} totalProviderCount={totalProviderCount} countServiceType={countServiceType} />

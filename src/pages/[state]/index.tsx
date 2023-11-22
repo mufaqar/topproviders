@@ -17,6 +17,7 @@ import CheepTable_CardProviderState from '@/components/provider/cheeptable-cardP
 import FastTable_CardProviderState from '@/components/provider/fasttable-cardProviderState';
 import OverView from '@/components/overview';
 import PageHead from '@/components/metas/pagesmeta';
+import Image from 'next/image';
 
 
 
@@ -35,7 +36,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
     } else if (type === "internet-tv") {
       return "Internet and TV";
     } else {
-      return type; 
+      return type;
     }
   }
 
@@ -45,7 +46,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
 
   const newServicesTypes = servicesTypes.map((st: any) => st.map((serviceType: any) => ({ name: serviceType.name, description: serviceType.description })));
   const uniqueServiceType: any = [];
- 
+
   const seenNames = new Set();
   newServicesTypes.forEach((st: any) => {
     st.forEach((serviceType: any) => {
@@ -56,7 +57,7 @@ export default function OurState({ allcities, state, allProviders }: any) {
     });
   });
 
- 
+
 
 
   const allProvidersFast = [...allProviders];
@@ -374,47 +375,37 @@ export default function OurState({ allcities, state, allProviders }: any) {
           </div>
         </div>
       </section>
-
-
-
-      <section className="my-16">
-        <div className="container mx-auto px-4">
-          <div className='mb-10'>
-            <h2 className="text-2xl font-bold">
+      <section className="py-16 bg-[#6041BB]">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 ">
+          <div>
+            <Image src="/images/technology-bg.jpg" alt="technology-bg" width={570} height={375} className='rounded-2xl h-full w-full object-cover' />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-3">
               Types of  {formatType(type)} Technologies available in  {state}
             </h2>
-            <p className='text-base'>
+            <p className='text-base text-white'>
               As of the time this page was written, likely have several types of  {formatType(type)} technologies available to its residents. These technologies include    {
                 uniqueServiceType.map((t: any, i: number) => (
                   <span key={i}>{t.name} , </span>
                 ))
               }
             </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
-
-            {
-              uniqueServiceType.map((t: any, i: number) => (
-                <Technology_Box
-                  icon={<MdCable />}
-                  title={t.name}
-                  key={i}
-                  content={t.description}
-                />
-              ))
-            }
-
-
-
-
-
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+              {
+                uniqueServiceType.map((t: any, i: number) => (
+                  <Technology_Box
+                    icon={<MdCable />}
+                    title={t.name}
+                    key={i}
+                    content={t.description}
+                  />
+                ))
+              }
+            </div>
           </div>
         </div>
       </section>
-
-
-
-
 
       <section>
         <div className='container mx-auto px-4 m-10'>

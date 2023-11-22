@@ -22,7 +22,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
   const { query } = useRouter();
   const type = query.type || "internet";
 
-  
+
   const city_code = query.city;
   const state = query.state;
   let C_State = (state as string).toUpperCase();
@@ -88,19 +88,19 @@ export default function Cities_com({ my_city, allProviders }: any) {
 
 
 
-        
-<PageHead
- title={
-  type === "internet"
-    ? `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State} ${currentYear}.`
-    : type === "tv"
-    ? `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State} for ${currentYear}.`
-    : `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State}`
-}
-  description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${city}, ${C_State} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
-      `${idx + 1} ${item?.title}`)).join(', ')}` }
-  url={`https://www.topproviders.net/${state}`}
-/>
+
+      <PageHead
+        title={
+          type === "internet"
+            ? `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State} ${currentYear}.`
+            : type === "tv"
+              ? `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State} for ${currentYear}.`
+              : `Best ${totalProviderCount} ${formatType(type)}  Service Providers in ${city}, ${C_State}`
+        }
+        description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${city}, ${C_State} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
+          `${idx + 1} ${item?.title}`)).join(', ')}`}
+        url={`https://www.topproviders.net/${state}`}
+      />
 
 
 
@@ -390,51 +390,43 @@ export default function Cities_com({ my_city, allProviders }: any) {
 
 
 
-
-
-      <section className="my-16">
-        <div className="container mx-auto px-4">
-          <div className='mb-10'>
-            <h2 className="text-2xl font-bold mb-2">
+      <section className="py-16 bg-[#6041BB]">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 ">
+          <div>
+            <Image src="/images/technology-bg.jpg" alt="technology-bg" width={570} height={375} className='rounded-2xl h-full w-full object-cover' />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-3">
               Types of internet Technologies available in  <span className="text-[#FECE2F] ">{city}, <span className='uppercase'>{state}</span></span>
             </h2>
-            <p className='text-base'>
+            <p className='text-base text-white'>
               As of the time this page was written, likely have several types of internet technologies available to its residents. These technologies include    {
                 uniqueServiceType.map((t: any, i: number) => (
                   <span key={i}> <span dangerouslySetInnerHTML={{ __html: t.name }} /> , </span>
                 ))
               }
             </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
-
-            {
-              uniqueServiceType.map((t: any, i: number) => (
-                <Technology_Box
-                  icon={<MdCable />}
-                  title={t.name}
-                  key={i}
-                  content={t.description}
-                />
-              ))
-            }
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+              {
+                uniqueServiceType.map((t: any, i: number) => (
+                  <Technology_Box
+                    icon={<MdCable />}
+                    title={t.name}
+                    key={i}
+                    content={t.description}
+                  />
+                ))
+              }
+            </div>
           </div>
         </div>
       </section>
-
-
-
-
-
 
       <section className="my-16">
         <div className="container mx-auto px-4 grid gap-10">
           <Faqs_Sec city={city} type={type} state={state} zipcode="" allProviders={allProviders} totalProviderCount={totalProviderCount} />
         </div>
       </section>
-
-
-
     </>
   )
 }
