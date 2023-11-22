@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-function Campare_Plan() {
+function Campare_Plan({ProviderOneD, ProviderTwoD}:any) {
     return (
         <div className='w-full md:overflow-hidden overflow-x-scroll'>
             <div className='flex flex-row md:w-full w-fit bg-[#eceff2] p-5'>
@@ -12,10 +12,10 @@ function Campare_Plan() {
                     </h4>
                 </div>
                 <div className='w-full min-w-[180px]'>
-                    <Image src='/images/logo/att.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
+                    <Image src={ProviderOneD.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mx-auto' />
                 </div>
                 <div className='w-full min-w-[180px]'>
-                    <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
+                    <Image src={ProviderTwoD.featuredImage?.node?.mediaItemUrl} alt="Feature" width={93} height={50} className='mx-auto' />
                 </div>
             </div>
             <div className='divide-y md:w-full w-fit'>
@@ -27,12 +27,12 @@ function Campare_Plan() {
                     </div>
                     <div className='w-full min-w-[180px]'>
                         <p className='text-base font-normal text-center'>
-                            $55/mo. – $80/mo.
+                            ${ProviderOneD?.providersInfo?.proPrice} /month
                         </p>
                     </div>
                     <div className='w-full min-w-[180px]'>
                         <p className='text-base font-normal text-center'>
-                            $49.99/mo.
+                            ${ProviderTwoD?.providersInfo?.proPrice} /month
                         </p>
                     </div>
                 </div>
@@ -44,12 +44,12 @@ function Campare_Plan() {
                     </div>
                     <div className='w-full min-w-[180px]'>
                         <p className='text-base font-normal text-center'>
-                            300 Mbps – 940 Mbps
+                            {ProviderOneD?.providersInfo?.proSpeed} Mbps
                         </p>
                     </div>
                     <div className='w-full min-w-[180px]'>
                         <p className='text-base font-normal text-center'>
-                            1000 Mbps
+                            {ProviderTwoD?.providersInfo?.proSpeed} Mbps
                         </p>
                     </div>
                 </div>
@@ -92,12 +92,12 @@ function Campare_Plan() {
 
                     </div>
                     <div className='w-full min-w-[180px]'>
-                        <Link href="#" className="text-sm text-white font-[Roboto] uppercase md:px-5 px-2.5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB] block w-fit mx-auto">
+                        <Link href={`/providers/${ProviderOneD.slug}`} className="text-sm text-white font-[Roboto] uppercase md:px-5 px-2.5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB] block w-fit mx-auto">
                             Check Availability
                         </Link>
                     </div>
                     <div className='w-full min-w-[180px]'>
-                        <Link href="#" className="text-sm text-white font-[Roboto] uppercase md:px-5 px-2.5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB] block w-fit mx-auto">
+                        <Link href={`/providers/${ProviderTwoD.slug}`} className="text-sm text-white font-[Roboto] uppercase md:px-5 px-2.5 py-2.5 bg-[#FECE2F] hover:bg-[#6041BB] block w-fit mx-auto">
                             Check Availability
                         </Link>
                     </div>
