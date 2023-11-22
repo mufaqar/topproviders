@@ -12,11 +12,11 @@ function Comparsons({ allProviders }: any) {
 
     return (
         <>
-            
+
             Comprapre
 
 
-           
+
         </>
     )
 }
