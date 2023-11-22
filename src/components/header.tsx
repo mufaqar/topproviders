@@ -129,7 +129,7 @@ const Header = () => {
                         </li>
 
                         <li onMouseEnter={() => handleSubMenu(2)} onMouseLeave={() => setSubMenu(null)} className='flex items-center cursor-pointer group'>
-                            <Link href="#" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>Providers</Link>
+                            <Link href="/providers" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>Providers</Link>
                             <span className='ml-1'>
                                 <FaChevronDown className="text-[#4d4c4f] group-hover:text-[#FECE2F]" />
                             </span>
