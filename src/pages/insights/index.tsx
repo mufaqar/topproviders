@@ -7,7 +7,6 @@ import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
 
 function Insight({ ProviderOneD, ProviderTwoD }: any) {
-  var featuresOne = ProviderOneD?.providersInfo?.features?.split(', ');
 
   return (
     <main>
