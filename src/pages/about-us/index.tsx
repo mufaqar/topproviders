@@ -16,7 +16,7 @@ function About_Us() {
                     <div>
                         <Image src="/images/diverse-team.jpg" alt='diverse-team' width={570} height={375} className='shadow-[0_15px_15px_rgba(0,0,0,0.05)] rounded-2xl' />
                     </div>
-                    <div className='py-16'>
+                    <div className='py-10'>
                         <h2 className='md:text-3xl text-2xl font-bold'>
                             Our Mission
                         </h2>
@@ -26,7 +26,7 @@ function About_Us() {
                     </div>
                 </div>
                 <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 items-center">
-                    <div className='py-16'>
+                    <div className='py-10 md:order-1 order-2'>
                         <h2 className='md:text-3xl text-2xl font-bold'>
                             How We Sustain Our Platform
                         </h2>
@@ -34,7 +34,7 @@ function About_Us() {
                             In order to maintain an ad-free experience for you, we support our platform through affiliate partnerships with Internet and TV providers, as well as other links featured on our website. While this may occasionally influence the providers we showcase and their placement on our site, rest assured that it does not compromise the impartiality of the information we provide for user comparison.
                         </p>
                     </div>
-                    <div>
+                    <div className='md:order-2 order-1'>
                         <Image src="/images/businesspeople.jpg" alt='businesspeople' width={570} height={375} className='shadow-[0_15px_15px_rgba(0,0,0,0.05)] rounded-2xl' />
                     </div>
                 </div>
@@ -42,7 +42,7 @@ function About_Us() {
                     <div>
                         <Image src="/images/self.jpg" alt='self' width={570} height={375} className='shadow-[0_15px_15px_rgba(0,0,0,0.05)] rounded-2xl' />
                     </div>
-                    <div className='py-16'>
+                    <div className='py-10'>
                         <h2 className='md:text-3xl text-2xl font-bold'>
                             Our Provider Ranking Criteria
                         </h2>
