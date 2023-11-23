@@ -267,3 +267,80 @@ export const states = [
     slug: "/la"
   },
 ]
+
+
+export const internet = [
+  {
+    name: "Internet in my area",
+    slug: "/"
+  },
+  {
+    name: "Fastest Internet",
+    slug: "/"
+  },
+  {
+    name: "Satellite Internet",
+    slug: "/"
+  },
+  {
+    name: "Fixed Wireless Internet",
+    slug: "/"
+  },
+]
+
+export const providers = [
+  {
+    name: "Internet in my area",
+    slug: "/"
+  },
+  {
+    name: "Fastest Internet",
+    slug: "/"
+  },
+  {
+    name: "Satellite Internet",
+    slug: "/"
+  },
+  {
+    name: "Fixed Wireless Internet",
+    slug: "/"
+  },
+]
+
+export const resources = [
+  {
+    name: "Internet in my area",
+    slug: "/"
+  },
+  {
+    name: "Fastest Internet",
+    slug: "/"
+  },
+  {
+    name: "Satellite Internet",
+    slug: "/"
+  },
+  {
+    name: "Fixed Wireless Internet",
+    slug: "/"
+  },
+]
+
+export const tools = [
+  {
+    name: "Internet in my area",
+    slug: "/"
+  },
+  {
+    name: "Fastest Internet",
+    slug: "/"
+  },
+  {
+    name: "Satellite Internet",
+    slug: "/"
+  },
+  {
+    name: "Fixed Wireless Internet",
+    slug: "/"
+  },
+]
