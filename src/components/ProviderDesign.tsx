@@ -1,4 +1,4 @@
-import useInternetHandler from '@/pages/internet/useInternetHandler';
+import useInternetHandler from '@/hooks/useInternetHandler'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'

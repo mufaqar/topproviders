@@ -1,3 +1,6 @@
+import CheapInternet from "@/pages/internet/cheap-internet";
+import FastInternet from "@/pages/internet/fast-internet";
+
 export const Services_data = [
   {
     name: 'INTERNET PROVIDERS',
@@ -343,4 +346,17 @@ export const tools = [
     name: "Fixed Wireless Internet",
     slug: "/"
   },
+]
+
+
+
+export const InternetPageDiffPath = [
+  {
+    slug: 'cheap-internet',
+    component: <CheapInternet/>
+  },
+  {
+    slug: 'fast-internet',
+    component: <FastInternet/>
+  }
 ]

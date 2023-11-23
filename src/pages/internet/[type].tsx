@@ -1,5 +1,5 @@
 import React from 'react'
-import useInternetHandler from './useInternetHandler'
+import useInternetHandler from '@/hooks/useInternetHandler'
 import { ProviderCardState } from '@/components/provider/provider-card-state'
 import { GetServerSideProps } from 'next'
 import { ProvidersByServiceType } from '@/config/query'
@@ -9,10 +9,16 @@ import ProvidersCompare from '@/components/compare/providers-compare'
 import ProviderDesign from '@/components/ProviderDesign'
 import { CiStar } from 'react-icons/ci'
 import CompareConectionTypes from '@/components/compareConectionTypes'
+import { InternetPageDiffPath } from '@/const/exports'
 
 const InternetType = ({ allProviders }: any) => {
      const { year, type, createData, topProvider } = useInternetHandler()
      const t:any = topProvider(allProviders)
+
+     let component = InternetPageDiffPath.find((path:any)=>path.slug === type)?.component
+     if(component){
+          return component
+     }
 
      return (
           <section className='container mx-auto px-3 my-20'>
@@ -23,7 +29,6 @@ const InternetType = ({ allProviders }: any) => {
                     {
                          allProviders?.map((item: any, idx: number) => {
                               const summaryData = createData(item)
-
                               return (
                                    <>
                                         <ProviderCardState key={idx} count={idx} type={type} item={summaryData} offer={item.providersInfo?.proOffer} />
@@ -38,7 +43,6 @@ const InternetType = ({ allProviders }: any) => {
                <p className='mt-3'>{type} internet transfers data through glass, fiber-optic cables, which makes it capable of moving information at the speed of light. {type} offers the fastest internet speeds and supports the most device connectivity among connection types. However, {type} has limited availability compared to DSL and cable internet, but providers continue to invest in {type} internet.</p>
                <h2 className="sm:text-3xl mt-10 text-2xl font-bold capitalize leading-10">
                     Is {type} Internet right for me?
-
                </h2>
                <p className='mt-3'>{type} internet is the most superior connection type in terms of speed and capacity. It’s one shortfall is lack of availability. However, providers continue to expand their networks. With faster speeds to support multiple connected devices and heavy usage, {type} offers reliable internet access without common headaches such as dead spots, buffering, and ISP throttling. However, due to its higher cost and limited availability, it isn’t for everyone.</p>
                <ProsAndCons />

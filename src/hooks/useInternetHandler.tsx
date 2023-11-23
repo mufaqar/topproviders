@@ -4,7 +4,7 @@ const useInternetHandler = () => {
      const d = new Date();
      let year = d.getFullYear();
      const { query: { type } } = useRouter()
-
+  
      const createData = (item: any) => {
           var summaryData = {
                logo: item?.featuredImage.node.mediaItemUrl,
