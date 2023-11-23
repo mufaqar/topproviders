@@ -7,7 +7,6 @@ import Image from 'next/image';
 function About_Us() {
     return (
         <>
-
             <PageHead title="About Us | Top Providers" description="Here at Top Providers, we make it easy to search, compare and order Internet and TV service providers. Call 833-592-0098 to learn more." url="https://www.topproviders.net/about-us" />
 
             <PageBanner title="About Us" />
