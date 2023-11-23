@@ -27,7 +27,7 @@ const Provider_Nav_State = () => {
     }
 
     return (
-        <section className={`bg-[#6041BB] py-5 shadow-sm border-y border-zinc-400/20 !z-10 ${nav ? 'fixed top-0 left-0 right-0' : 'sticky'
+        <section className={`bg-[#6041BB] py-5 shadow-sm border-y border-zinc-400/20 !z-10 ${nav ? '' : 'sticky'
             }`}>
             <div className="container mx-auto px-4">
                 <div>
