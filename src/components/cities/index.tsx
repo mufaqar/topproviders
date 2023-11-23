@@ -105,7 +105,7 @@ export default function Cities_com({ my_city, allProviders }: any) {
 
 
 
-      <section className="min-h-[40vh]  flex items-center bg-gray-50">
+      <section className="min-h-[40vh]  flex items-center bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div >
             <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">

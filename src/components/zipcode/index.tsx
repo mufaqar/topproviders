@@ -88,7 +88,7 @@ function Zip_Code_Com({ zipcode, city, state, allProviders, zones }: any) {
             <PageHead title={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city} , ${state} `} description={`Best ${totalProviderCount} ${formatType(type)} Service Providers in ${zipcode}, ${city}, ${state} for ${currentMonthName}, ${currentYear}.  ${allProviders?.slice(0, 4).map((item: any, idx: number) => (
                 `${idx + 1} ${item?.title}`)).join(', ')}`} url={`https://www.topproviders.net/${state_code}/${city_code}?zipcode=${zipcode}&type=${type}`} />
 
-            <section className="min-h-[40vh]  flex items-center bg-gray-50">
+            <section className="min-h-[40vh]  flex items-center bg-gray-50 py-16">
                 <div className="container mx-auto px-4">
                     <div>
                         <h1 className="sm:text-5xl text-2xl font-bold text-center max-w-[850px] mx-auto capitalize leading-10">
