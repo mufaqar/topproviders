@@ -176,3 +176,94 @@ export const Galler_Data = [
     img: '/images/partner13.png',
   },
 ];
+
+
+export const Cities = [
+  {
+      name: "Los Angeles",
+      slug: "/ca/los-angeles"
+  },
+  {
+      name: "New York",
+      slug: "/ny/new-york"
+  },
+  {
+      name: "Boston",
+      slug: "in/boston"
+  },
+  {
+      name: "Las Vegas",
+      slug: "/nv/las-vegas"
+  },
+  {
+      name: "Phoenix",
+      slug: "/az/phoenix"
+  },
+  {
+      name: "Atlanta",
+      slug: "/tx/atlanta"
+  },
+  {
+      name: "Houston",
+      slug: "/ak/houston"
+  },
+  {
+      name: "Denver",
+      slug: "/co/dever"
+  },
+  {
+      name: "Orlando",
+      slug: "/ok/orlando"
+  },
+  {
+      name: "Chicago",
+      slug: "/il/chicago"
+  },
+  {
+      name: "Detroit",
+      slug: "/or/detroit"
+  },
+  {
+      name: "Philadelphia",
+      slug: "/pa/philadelphia"
+  },
+]
+
+export const states = [
+  {
+    name: "Alaska",
+    slug: "/ak"
+  },
+  {
+    name: "Alabama",
+    slug: "/al"
+  },
+  {
+    name: "Arkansas",
+    slug: "/ar"
+  },
+  {
+    name: "Arizona",
+    slug: "/az"
+  },
+  {
+    name: "California",
+    slug: "/ca"
+  },
+  {
+    name: "Colorado",
+    slug: "/co"
+  },
+  {
+    name: "Delaware",
+    slug: "/de"
+  },
+  {
+    name: "Georgia",
+    slug: "/ge"
+  },
+  {
+    name: "Louisiana",
+    slug: "/la"
+  },
+]

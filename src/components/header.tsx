@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { LuPhoneCall } from 'react-icons/lu'
 import SearchForm from './searchform'
 import { FaChevronDown } from 'react-icons/fa6'
+import { Cities, states } from '@/const/exports'
 
 const Header = () => {
     const [open, setOpen] = useState(false)
@@ -215,47 +216,15 @@ const Header = () => {
                                     <div className='col-span-2' >
                                         <h2>TOP STATES</h2>
                                         <ul className='grid md:grid-cols-2'>
-                                            <li>
-                                                <Link href="/" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Internet in my area
-
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/spectrum" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Cheap Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/frontier" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fastest Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/windstream" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    DSL internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/centurylink" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Satellite Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/earthlink" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fiber Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/hughesnet" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fixed Wireless Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/viasat" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    5G Internet
-                                                </Link>
-                                            </li>
+                                            {
+                                                states?.map((s:any, id:number) => (
+                                                    <li key={id}>
+                                                        <Link href={s.slug} className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
+                                                            {s.name}
+                                                        </Link>
+                                                    </li>
+                                                ))
+                                            }
 
                                             Best Internet Deals
 
@@ -264,18 +233,13 @@ const Header = () => {
                                     <div >
                                         <h2>TOP CITIES</h2>
                                         <ul>
-                                            <li>
-                                                <Link href="/">Internet & TV Bundles</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">Satellite TV Providers</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">Streaming Services</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">See All TV Options</Link>
-                                            </li>
+                                            {
+                                                Cities?.slice(0,5).map((s:any, id:number) => (
+                                                    <li key={id}>
+                                                        <Link href={s.slug}>{s.name}</Link>
+                                                    </li>
+                                                ))
+                                            }
                                         </ul>
                                     </div>
                                 </div>
@@ -293,47 +257,15 @@ const Header = () => {
                                     <div className='col-span-2' >
                                         <h2>TOP STATES</h2>
                                         <ul className='grid md:grid-cols-2'>
-                                            <li>
-                                                <Link href="/" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Internet in my area
-
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/spectrum" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Cheap Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/frontier" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fastest Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/windstream" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    DSL internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/centurylink" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Satellite Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/earthlink" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fiber Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/hughesnet" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    Fixed Wireless Internet
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/providers/viasat" className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
-                                                    5G Internet
-                                                </Link>
-                                            </li>
+                                            {
+                                                states?.map((s:any, id:number) => (
+                                                    <li key={id}>
+                                                        <Link href={s.slug} className='text-sm font-bold tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
+                                                            {s.name}
+                                                        </Link>
+                                                    </li>
+                                                ))
+                                            }
 
                                             Best Internet Deals
 
@@ -342,18 +274,13 @@ const Header = () => {
                                     <div >
                                         <h2>TOP CITIES</h2>
                                         <ul>
-                                            <li>
-                                                <Link href="/">Internet & TV Bundles</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">Satellite TV Providers</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">Streaming Services</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">See All TV Options</Link>
-                                            </li>
+                                            {
+                                               Cities?.slice(0,5).map((s:any, id:number) => (
+                                                    <li key={id}>
+                                                        <Link href={s.slug}>{s.name}</Link>
+                                                    </li>
+                                                ))
+                                            }
                                         </ul>
                                     </div>
                                 </div>
@@ -376,3 +303,7 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
