@@ -349,7 +349,6 @@ export const tools = [
 ]
 
 
-
 export const InternetPageDiffPath = [
   {
     slug: 'cheap-internet',
