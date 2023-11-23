@@ -140,7 +140,7 @@ export default function Home({ BlogPosts }: any) {
                   <SearchForm />
                </div>
                {/* <Image src="/images/map.png" alt="map" width={867} height={565} className='mx-auto' /> */}
-               <StateMap />
+               {/* <StateMap /> */}
             </div>
 
          </section>
