@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceBox = ({ img, title, content, custm_Bg }: any) => {
     return (
-        <div className="w-full py-7 px-4 bg-white shadow-[0_0_12px_0_rgba(0,0,0,0.20)] rounded-tl-[90px] rounded-br-[90px] rounded-tr-[3px] rounded-bl-[3px]">
+        <div className="w-full py-7 px-4 transform hover:-translate-y-3 transition-all duration-300 ease-in-out bg-white shadow-[0_0_12px_0_rgba(0,0,0,0.20)] rounded-tl-[90px] rounded-br-[90px] rounded-tr-[3px] rounded-bl-[3px]">
             <div className="mt-5">
                 <span className={`block rounded-full w-fit mx-auto p-4 ${custm_Bg}`}>
                     {img}

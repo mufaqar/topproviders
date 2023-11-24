@@ -158,66 +158,66 @@ export default function Home({ BlogPosts }: any) {
                   </Link>
                </div>
                <div className='md:w-[56%] w-full grid md:grid-cols-4 grid-cols-2 gap-4 [&>*:nth-child(5)]:md:ml-14 [&>*:nth-child(6)]:md:ml-14 [&>*:nth-child(7)]:md:ml-14 [&>*:nth-child(8)]:md:ml-14'>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/cox" >
-                        <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/viasat" >
-                        <Image src='/images/logo/Viasat.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/att" >
-                        <Image src='/images/logo/att.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/spectrum" >
-                        <Image src='/images/logo/Spectrum.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/dish" >
-                        <Image src='/images/logo/dish.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/hughesNet" >
-                        <Image src='/images/logo/HughesNet.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/frontier" >
-                        <Image src='/images/logo/froniter.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/centurylink" >
-                        <Image src='/images/logo/CenturyLink.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/earthlink" >
-                        <Image src='/images/logo/EarthLink.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/windstream" >
-                        <Image src='/images/logo/Windstream.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/wow" >
-                        <Image src='/images/logo/WOW.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
-                  <div className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center">
-                     <Link href="/providers/xfinity" >
-                        <Image src='/images/logo/xfinity.jpg' alt="Feature" width={93} height={50} className='mx-auto' />
-                     </Link>
-                  </div>
+                  <Link href="/providers/cox" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/Cox.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/viasat" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/Viasat.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/att" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/att.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/spectrum" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/Spectrum.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/dish" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/dish.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/hughesNet" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/HughesNet.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/frontier" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div  >
+                        <Image src='/images/logo/froniter.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/centurylink" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/CenturyLink.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/earthlink" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/EarthLink.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/windstream" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/Windstream.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/wow" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div>
+                        <Image src='/images/logo/WOW.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
+                  <Link href="/providers/xfinity" className="w-[130px] mx-auto h-[130px] bg-white rounded-full flex items-center justify-center group">
+                     <div >
+                        <Image src='/images/logo/xfinity.jpg' alt="Feature" width={93} height={50} className='group-hover:scale-105 mx-auto' />
+                     </div>
+                  </Link>
                </div>
             </div>
 
@@ -232,7 +232,7 @@ export default function Home({ BlogPosts }: any) {
                      </h2>
                   </div>
                   <div className='md:w-[45%] w-full'>
-                     <Link href="/blog" className='text-xl font-bold text-[#2B3253] flex items-center gap-2 hover:gap-10 transform transition-all duration-300 w-36 md:ml-auto'>
+                     <Link href="/blog" className='text-xl font-bold text-[#2B3253] flex items-center gap-2 hover:gap-10 transform transition-all duration-300 w-40 md:ml-auto'>
                         View All <FaArrowRightLong className="text-3xl" />
                      </Link>
                   </div>

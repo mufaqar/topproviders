@@ -10,14 +10,13 @@ export default function Blogpost({ data }: any) {
                 <Link href="#" className='text-lg font-normal text-[#FECE2F]'>
                     News
                 </Link>
-                <Link href="#" className='md:text-2xl text-xl font-bold text-white'>
-                    Best Internet Speeds for Working From Home
+                <Link href={`/blog/${data?.node.slug}`} className='md:text-2xl text-xl font-bold text-white'>
+                    {data?.node.title}
                 </Link>
                 <Link href="#" className='text-lg font-normal text-[#FECE2F]'>
                     May 6, 2023
                 </Link>
             </div>
         </div>
-
     )
 }
