@@ -55,7 +55,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/providers-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/providers-sitemap.xml', sitemap);
 }
 
 generateSitemap();

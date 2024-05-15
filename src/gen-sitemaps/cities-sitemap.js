@@ -4,7 +4,7 @@ const fs = require('fs');
 const SITE_URI = 'https://topproviders.net';
 
 async function fetchStateWiseCity() {
-  const responceStateWiseCity = await fetch(`https://topproviders.net/wp-json/custom/v1/states-cities?posts_per_page=10000&offset=40000`) 
+  const responceStateWiseCity = await fetch(`https://topproviders.net/wp-json/custom/v1/states-cities?posts_per_page=10000&offset=0`) 
   const citiesData = await responceStateWiseCity.json();
   const resultUrls = [];
   // Iterate through the keys and their associated arrays
@@ -51,7 +51,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/cities_5-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/cities-1-sitemap.xml', sitemap);
 }
 
 generateSitemap();

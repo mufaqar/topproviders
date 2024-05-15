@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/states-sitemap.js"
   },
   "dependencies": {
     "@apollo/client": "^3.10.3",

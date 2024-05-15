@@ -63,7 +63,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/states-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/states-sitemap.xml', sitemap);
 }
 
 generateSitemap();
