@@ -6,6 +6,7 @@ import ZipCodeModule from "@/components/zipcode";
 import CitiesModule from "@/components/cities";
 import StateModule from "@/components/state";
 import NotFound from "@/components/NotFound";
+import Types from "@/components/types/Types";
 
 async function fetchStateDataAsync(query: any) {
   const stateResult = await fetchStateData(query);
@@ -44,6 +45,20 @@ export default async function Providers(props: any) {
   const { ZipData, zipcode, type, zipNotFound } = await fetchZipcodeDataAsync(
     query
   );
+
+
+  // Types 
+  if( 
+    query?.[1] === 'dsl' ||
+    query?.[1] === 'cable' ||
+    query?.[1] === 'fiber' ||
+    query?.[1] === 'fixed-wireless' ||
+    query?.[1] === 'satellite' ||
+    query?.[1] === 'streaming'
+  ){
+    return <Types providerType={query?.[1]} service={query?.[0]}/>
+  }
+  
 
 
   // State Module pages

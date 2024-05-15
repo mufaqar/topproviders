@@ -26,7 +26,7 @@ const ProvidersCompare = ({ type, providers }: any) => {
                          </thead>
                          <tbody>
                               {
-                                   providers.map((provider: any, i: number) => (
+                                   providers?.map((provider: any, i: number) => (
                                         <tr key={i} className="odd:bg-white even:bg-gray-100">
                                              <th scope="row" className="px-6 py-6 border-r font-medium text-gray-700 whitespace-nowrap ">
                                                   {provider.title}

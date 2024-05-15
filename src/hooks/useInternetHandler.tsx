@@ -1,22 +1,22 @@
 "use client";
 
-import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 
 const useInternetHandler = () => {
      const d = new Date();
      let year = d.getFullYear();
-     const { query: { type } } = useRouter()
+     const params = useParams()
   
      const createData = (item: any) => {
           var summaryData = {
                logo: item?.featuredImage.node.mediaItemUrl,
                provider: item?.title,
-               type,
-               mobileNo: item.providersInfo?.proPhone,
-               slug: item.slug,
-               speed: item.providersInfo.servicesInfo.internetServices?.speed,
-               summery: item.providersInfo.servicesInfo.internetServices.features,
-               price: item.providersInfo.servicesInfo.internetServices.price,
+               type: params.zipcode[1],
+               mobileNo: item?.providersInfo?.proPhone,
+               slug: item?.slug,
+               speed: item?.providersInfo.servicesInfo.internetServices?.speed,
+               summery: item?.providersInfo.servicesInfo.internetServices.features,
+               price: item?.providersInfo.servicesInfo.internetServices.price,
           }
           return summaryData
      }
@@ -24,14 +24,14 @@ const useInternetHandler = () => {
      // find top provider base on internet speed 
      const topProvider = (allProviders: any) => {
           function findProviderWithMaxSpeed(arr:any) {
-               if (arr.length === 0) {
+               if (arr?.length === 0) {
                  return null; // Return null for an empty array
                }
                
                let maxSpeedObject = null;
                let maxSpeed = -Infinity; // Start with a very low speed
              
-               arr.forEach((provider:any) => {
+               arr?.forEach((provider:any) => {
                  if (
                    provider.providersInfo &&
                    provider.providersInfo.servicesInfo &&
@@ -54,7 +54,7 @@ const useInternetHandler = () => {
      }
 
      return {
-          year, type, createData, topProvider
+          year, type:params.zipcode[1] , createData, topProvider
      }
 }
 
