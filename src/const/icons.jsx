@@ -1,12 +1,11 @@
-import {FaTv,FaWifi, FaMobileAlti ,  FaFileAlt } from 'react-icons/fa'
-import {HiArrowsUpDowni } from 'react-icons/hi'
+import {FaTv,FaWifi, FaMobileAlti  } from 'react-icons/fa'
+import {FaArrowsUpDown  } from 'react-icons/fa6'
 import {GiAerialSignali} from 'react-icons/gi'
 
 export const icons = [
-
-  {name:"FaWifi" , icon:FaWifi },
-  {name:"FaTv" , icon:FaTv },
-  {name:"FaMobileAlti" , icon:FaMobileAlti },
-  {name:"HiArrowsUpDowni" , icon:HiArrowsUpDowni },
-  {name:"GiAerialSignali" , icon:GiAerialSignali }
+  {name:"FaWifi" , icon:FaArrowsUpDown },
+  {name:"FaTv" , icon:FaArrowsUpDown },
+  {name:"FaMobileAlti" , icon:FaArrowsUpDown },
+  {name:"HiArrowsUpDowni" , icon:FaArrowsUpDown },
+  {name:"GiAerialSignali" , icon:FaArrowsUpDown }
 ]
