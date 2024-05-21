@@ -1,6 +1,6 @@
 export default function (req, res) {
      // require('dotenv').config()
-     let nodemailer = require('nodemailer')
+     let nodemailer = require('nodemailer');
 
      const EMAIL="softsgens@gmail.com"
      const GMAIL_PASSWORD="bczjxzfatgxsebrz"
