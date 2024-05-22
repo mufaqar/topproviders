@@ -1,17 +1,15 @@
 "use client";
 
-import { useParams } from "next/navigation";
 
 const useInternetHandler = () => {
      const d = new Date();
      let year = d.getFullYear();
-     const params = useParams()
   
      const createData = (item: any) => {
           var summaryData = {
                logo: item?.featuredImage.node.mediaItemUrl,
                provider: item?.title,
-               type: params.zipcode[1],
+               type: 'internet',
                mobileNo: item?.providersInfo?.proPhone,
                slug: item?.slug,
                speed: item?.providersInfo.servicesInfo.internetServices?.speed,
@@ -54,7 +52,7 @@ const useInternetHandler = () => {
      }
 
      return {
-          year, type:params.zipcode[1] , createData, topProvider
+          year, type: 'internet' , createData, topProvider
      }
 }
 
