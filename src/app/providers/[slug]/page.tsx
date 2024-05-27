@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import parse from 'html-react-parser';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Faqs_Provider from '@/components/faqs_provider'
 import PlanBox from '@/components/pricing/planBox'
 import FeatureBox from '@/components/pricing/featureBox'
@@ -13,20 +13,22 @@ import InternetTVPhonePlanBox from '@/components/pricing/internetTVPhonePlanBox'
 import PageHead from '@/components/metas/pagesmeta'
 import Get_Lootie from '@/components/lootie'
 import animationData from "../../../../public/loti/lotie1.json";
-import useProviderAPI from '@/hooks/useProviderAPI'
+// import useProviderAPI from '@/hooks/useProviderAPI'
+import apolloClient from '@/config/client';
+import { SINGLE_Provider } from '@/config/query';
 
 
 export default function SProviders({ params }: any) {
   const slug = params.slug
   const [Provider, setProvider] = useState<any>()
 
-  useProviderAPI(slug)
-  .then((provider) => {
-    setProvider(provider);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+  // useProviderAPI(slug)
+  // .then((provider) => {
+  //   setProvider(provider);
+  // })
+  // .catch((error) => {
+  //   console.error(error);
+  // });
 
   const provider_name = Provider?.title;
   const provider_slug = Provider?.slug;
@@ -53,10 +55,19 @@ export default function SProviders({ params }: any) {
     }
   }
   if (typeof window !== "undefined") {
-
     window.addEventListener('scroll', changeBackground);
-
   }
+
+  useEffect(()=>{
+      (async()=>{
+        const [Provider] = await Promise.all([
+          apolloClient.query({ query: SINGLE_Provider, variables: { slug } }),
+       ]);
+       const ProviderRes = Provider?.data?.singleProvider
+       setProvider(ProviderRes);
+      })()
+  });
+
 
   return (
     <>
@@ -240,8 +251,6 @@ export default function SProviders({ params }: any) {
           <div className=''>
             {Provider?.providersInfo?.block.map((item: any, index: number) => (
               <div key={index}>
-
-
                 <h2 className='block_heading'>{parse(`${item.heading} `)} </h2>
                 <div className='block_content'>{parse(`${item.content} `)}</div> </div>
             ))}
