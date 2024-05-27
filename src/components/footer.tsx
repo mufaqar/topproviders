@@ -22,17 +22,17 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="https://twitter.com/cablemovers">
+              <Link href="https://www.youtube.com/@top-providers">
                 <BiLogoYoutube className='text-white hover:text-[#6041BB] h-10 w-10 p-2 border border-white rounded-lg bg-transparent hover:bg-white' />
               </Link>
             </li>
             <li>
-              <Link href="https://twitter.com/cablemovers">
+              <Link href="https://www.instagram.com/top.providers/">
                 <BiLogoInstagram className='text-white hover:text-[#6041BB] h-10 w-10 p-2 border border-white rounded-lg bg-transparent hover:bg-white' />
               </Link>
             </li>
             <li>
-              <Link href="https://www.linkedin.com/company/cablemovers-net">
+              <Link href="https://www.linkedin.com/company/top-providers">
                 <BiLogoLinkedinSquare className='text-white hover:text-[#6041BB] h-10 w-10 p-2 border border-white rounded-lg bg-transparent hover:bg-white' />
               </Link>
             </li>
