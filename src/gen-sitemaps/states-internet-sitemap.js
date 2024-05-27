@@ -20,12 +20,13 @@ const query = `
 
 
 const SITE_URI = 'https://topproviders.net';
+const type = 'internet'
 
 async function fetchStates() {
   const resultUrls = [];
   // Iterate through the keys and their associated arrays
   for (const key in citiesData) {
-    const url = SITE_URI + '/' + key;
+    const url = SITE_URI + '/' + type + '/' + key;
     resultUrls.push(url);
   }
   return resultUrls
@@ -63,7 +64,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/sitemaps/states-sitemap.xml', sitemap);
+  fs.writeFileSync(`public/sitemaps/states-${type}-sitemap.xml`, sitemap);
 }
 
 generateSitemap();

@@ -34,9 +34,8 @@ const StateMap = () => {
   const handleClick = (geo) => {
     const cur = allStates.find((s) => s.val === geo.id);
     if (cur) {
-     console.log("🚀 ~ file: stateMap.jsx:35 ~ handleClick ~ cur:", cur)
      setSelectedState(cur.val);
-     router.push((cur.id).toLocaleLowerCase())
+     router.push(`/internet/${(cur.id).toLocaleLowerCase()}`)
     }
   };
 
