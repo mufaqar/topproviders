@@ -136,22 +136,24 @@ h6 {
 }
 
 .custom-loader {
-  width: 100px;
-  height: 100px;
-  display: grid;
-  border: 8px solid #0000;
+  width: 20px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border-color: #ffffff #0000;
-  animation: s6 1s infinite linear;
+  background: #000;
+  box-shadow: 0 0 0 0 #0004;
+  animation: l2 1.5s infinite linear;
+  position: relative;
 }
 
 .custom-loader::before,
 .custom-loader::after {
-  content: '';
-  grid-area: 1/1;
-  margin: 4px;
-  border: inherit;
-  border-radius: 50%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -0.5s;
 }
 
 .custom-loader::before {
@@ -163,6 +165,7 @@ h6 {
 
 .custom-loader::after {
   margin: 16px;
+  animation-delay: -1s;
 }
 
 @keyframes s6 {

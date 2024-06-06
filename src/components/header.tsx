@@ -136,7 +136,7 @@ const Header = () => {
                                             {
                                                 states?.map((s: any, id: number) => (
                                                     <li key={id}>
-                                                        <Link href={s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
+                                                        <Link href={`internet${s.slug}`} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
                                                     </li>
@@ -151,7 +151,7 @@ const Header = () => {
                                             {
                                                 Cities?.map((s: any, id: number) => (
                                                     <li key={id}>
-                                                        <Link href={s.slug} className='text-sm tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
+                                                        <Link href={`internet${s.slug}`} className='text-sm tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
                                                     </li>
