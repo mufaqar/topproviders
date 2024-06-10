@@ -20,24 +20,24 @@ import animationData from '../../public/loti/lotie1.json'
 
 
 
-async function getData(){
-  const [allposts] = await Promise.all([
-    apolloClient.query({ query: AllPosts }),
- ]);
- const BlogPosts = allposts.data.posts.edges;
+async function getData() {
+   const [allposts] = await Promise.all([
+      apolloClient.query({ query: AllPosts }),
+   ]);
+   const BlogPosts = allposts.data.posts.edges;
 
-  return {
-    BlogPosts
-  }
+   return {
+      BlogPosts
+   }
 }
 
 export default async function Home() {
 
-  const { BlogPosts } = await getData()    
+   const { BlogPosts } = await getData()
 
-  return (
-    <>
-     <section className={`min-h-screen h-full flex items-center`}>
+   return (
+      <>
+         <section className={`min-h-screen h-full flex items-center`}>
             <div className="container mx-auto px-4 flex md:flex-row flex-col gap-5 items-center">
                <div className="py-10 md:w-[61%] w-full">
                   <h1 className="text-3xl md:text-7xl font-extrabold text-[#262626]">
@@ -58,11 +58,12 @@ export default async function Home() {
                <div className="mb-10 flex md:flex-row flex-col gap-7 items-center">
                   <div className='md:w-[65%] w-full'>
                      <h2 className='md:text-6xl text-2xl font-bold mb-5'>
-                        How it Works?
+
+                        How does it Work?
+
                      </h2>
                      <p className='text-lg font-normal text-[#4E4E4E]'>
-                        Here At Top Providers, We Research And Review Leading Providers And Have Found The Most Popular Plans And Deals On Every Major Internet And Tv Service Provider To Help You Shop Smartly.
-                     </p>
+                     At Top Providers, we do the research, so you don't have to. We've reviewed the top internet and TV service providers and found the best plans and deals. Let us help you find the perfect package to fit your needs and budget. Shop smarter with Top Providers!  </p>
                   </div>
                   <div className='md:w-[45%] w-full'>
                      <Image src="/images/how-work.png" alt="how-work" width={460} height={303} />
@@ -72,25 +73,25 @@ export default async function Home() {
                   <ServiceBox
                      img={<HiOutlineSearchCircle className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Search "
-                     content="Find providers in your area with a simple zip code search."
+                     content="Find providers in your area with a quick zip code search."
                      custm_Bg="bg-[#e7e2fe]"
                   />
                   <ServiceBox
                      img={<BiGitCompare className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Compare Top Providers"
-                     content="Compare dozens of top TV and internet providers like AT&T and Xfinity to find the best high speed options in minutes."
+                     content="Easily compare dozens of top TV and internet providers, like AT&T and Xfinity, to find the best high-speed options in minutes."
                      custm_Bg="bg-[#fbf1e2]"
                   />
                   <ServiceBox
                      img={<HiOutlineShoppingCart className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Compare Bundle Deals"
-                     content="Discover seamless internet and TV bundles with our user-friendly zip code search. Compare the best local deals in one place."
+                     content="Discover seamless internet and TV bundles with our user-friendly zip code search. Compare the best local deals all in one place."
                      custm_Bg="bg-[#ffdbce]"
                   />
                   <ServiceBox
                      img={<BsSpeedometer className="text-6xl text-[#6041BB] mx-auto" />}
                      title="Calculate Your Speed"
-                     content="Optimize your expenses – tailor your internet speed to your lifestyle with our Internet Speed Quiz. Pay only for what you truly need!"
+                     content="Optimize your expenses – match your internet speed to your lifestyle with our Internet Speed Quiz. Pay only for what you really need!"
                      custm_Bg="bg-[#e8ebe4]"
                   />
                </div>
@@ -100,20 +101,20 @@ export default async function Home() {
          <section className="py-16">
             <div className="container mx-auto px-4">
                <h2 className='md:text-6xl text-2xl font-bold text-center text-[#262626] mb-10'>
-                  Why Compare with Top Providers
+               Why Compare Top Internet and TV Service Providers
                </h2>
                <div className='grid md:grid-cols-3 grid-cols-1 gap-7 items-center'>
                   <div className='grid gap-8'>
                      <CompareBox
                         img={<AiOutlineClockCircle className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Save Time"
-                        content="Uncover leading providers in your vicinity instantly with our zip search tool. Effortlessly filter plans based on internet, TV, bundles, and more."
+                        content="Using our zip code search tool, quickly uncover top providers in your area. Easily filter plans for internet, TV, bundles, and more."
                         custm_Bg="bg-[#e7e2fe]"
                      />
                      <CompareBox
                         img={<FaHandsHelping className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Helpful Tools"
-                        content="Explore valuable insights and expert advice in our Resource Center, designed to enhance your experience and maximize the benefits of our services."
+                        content="Discover helpful tips and expert advice in our Resource Center. It's designed to improve your experience and make the most of our services."
                         custm_Bg="bg-[#fbf1e2]"
                      />
                   </div>
@@ -125,13 +126,13 @@ export default async function Home() {
                      <CompareBox
                         img={<GiMoneyStack className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Save Money"
-                        content="Effortlessly compare real-time prices and discover the best deals that align with your budget and digital requirements."
+                        content="Easily compare real-time prices and find the best deals that fit your budget and digital requirements."
                         custm_Bg="bg-[#ffdbce]"
                      />
                      <CompareBox
                         img={<FaUserGraduate className="text-5xl text-[#6041BB] mx-auto" />}
                         title="Get Expert Advice"
-                        content="Rely on our team of experts who assess providers based on criteria such as performance and price, ensuring we recommend the best options available in your vicinity."
+                        content="Count on our team of experts, who evaluate providers based on factors like performance and price. We will recommend the best options available in your area."
                         custm_Bg="bg-[#e8ebe4]"
                      />
                   </div>
@@ -153,7 +154,7 @@ export default async function Home() {
             </div>
 
          </section>
-         
+
          <section className="py-16">
             <div className="container mx-auto py-16 px-6 flex md:flex-row flex-col items-center gap-10 bg-[#F2F2F2] md:py-10 md:px-16 rounded-tl-[90px] rounded-br-[90px] rounded-tr-[3px] rounded-bl-[3px]">
                <div className='md:w-[44%] w-full'>
@@ -161,9 +162,8 @@ export default async function Home() {
                      Review <br />Top Providers
                   </h2>
                   <p className='text-lg font-normal text-[#4E4E4E] mb-5'>
-                     Allow us to assist you in navigating through the options. Compare the top providers in your area and discover high-speed choices for internet, TV, or bundles tailored to meet your specific needs.
-                  </p>
-                  <Link href="#" className='text-sm font-normal AxiformaRegular bg-[#FECE2F] text-white py-3 px-12 rounded-[3px] '>
+                  Let us help you navigate your options. Compare the leading providers in your area and find high-speed choices for internet, TV, or bundled services tailored to your needs.  </p>
+                  <Link href="/providers/" className='text-sm font-normal AxiformaRegular bg-[#FECE2F] text-white py-3 px-12 rounded-[3px] '>
                      View All
                   </Link>
                </div>
@@ -255,7 +255,7 @@ export default async function Home() {
                   })}
                </div>
             </div>
-         </section> 
-    </>
-  );
+         </section>
+      </>
+   );
 }

@@ -4,12 +4,18 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+import { openGraph, twitter } from "@/lib/seoMeta";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Top Providers | Find The Top Internet and TV Service Providers",
-  description: "Planning a Move? Top Providers can help you find the best Internet and TV Service Provider. Find best deals on Cable and High Speed Internet.",
+  title: "Find Top Internet and TV Service Providers in your area.",
+  description: "Discover the perfect Internet and TV Service Providers. Find unbeatable deals on Cable and High-Speed Internet to make your move seamless and enjoyable!",
+  alternates: {
+    canonical: `https://www.topproviders.net/`,
+  },
+  twitter: { ...twitter },
+  openGraph: { ...openGraph },
 };
 
 export default function RootLayout({
