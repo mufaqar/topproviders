@@ -20,7 +20,10 @@ import { SINGLE_Provider } from '@/config/query';
 
 export default function SProviders({ params }: any) {
   const slug = params.slug
-  const [Provider, setProvider] = useState<any>()
+
+  const [Provider, setProvider] = useState<any>();
+
+  // console.log("🚀 ~ SProviders ~ slug:", Provider);
 
   // useProviderAPI(slug)
   // .then((provider) => {
@@ -61,7 +64,7 @@ export default function SProviders({ params }: any) {
   useEffect(()=>{
       (async()=>{
         const [Provider] = await Promise.all([
-          apolloClient.query({ query: SINGLE_Provider, variables: { slug } }),
+          apolloClient.query({ query: SINGLE_Provider, variables: { id:slug } }),
        ]);
        const ProviderRes = Provider?.data?.singleProvider
        setProvider(ProviderRes);
