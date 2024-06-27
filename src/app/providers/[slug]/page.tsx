@@ -96,8 +96,8 @@ export default function SProviders({ params }: any) {
               <BiPhone /> {pro_phone}
             </Link> */}
           </div>
-          <div className='md:w-1/2 w-full md:block hidden'>
-            <Link href={`/providers/${provider_slug}`} >  <Image src={Provider?.featuredImage?.node.mediaItemUrl} className='' alt="Feature Image" width={140} height={50} /></Link>
+          <div className='md:w-1/2 w-full md:block hidden relative pt-8'>
+            <Link href={`/providers/${provider_slug}`} className='absolute left-1/2 transform  -translate-x-1/2'>  <Image src={Provider?.featuredImage?.node.mediaItemUrl} className='' alt="Feature Image" width={140} height={50} /></Link>
             <Get_Lootie src={animationData} />
           </div>
         </div>

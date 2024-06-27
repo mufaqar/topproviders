@@ -11,6 +11,7 @@ import Faqs_Zip from '@/components/faqs_zip';
 import SearchZipcodeModelBox from '../search-zipcode-modelBox'
 import { formatType } from '@/utils'
 import { useParams } from 'next/navigation'
+import { ProviderCardState } from '../provider/provider-card-state'
 
 function ZipCodeModule({ zipcode, city, state, allProviders, zones, type }: any) {
 
@@ -97,7 +98,7 @@ function ZipCodeModule({ zipcode, city, state, allProviders, zones, type }: any)
                             {formatType(type)} Providers in <span className="text-[#ef9831] ">{zipcode} </span>
                         </h2>
                     </div>
-                    <div className='grid gap-7 md:!grid-cols-2 lg:!grid-cols-3 gap-y-20 !mt-20 !mb-10'>
+                    <div className='grid grid-cols-1 gap-7'>
 
                         {
                             allProviders?.map((item: any, idx: number) => {
@@ -117,7 +118,7 @@ function ZipCodeModule({ zipcode, city, state, allProviders, zones, type }: any)
 
                                 return (
                                     <>
-                                        <ProviderCard count={idx} type={types} item={summaryData} zone={zones} offer={item.providersInfo?.proOffer} />
+                                        <ProviderCardState key={idx} count={idx} type={type} item={summaryData} offer={item?.pro_offer} />
                                     </>
                                 )
                             })

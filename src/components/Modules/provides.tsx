@@ -73,7 +73,7 @@ export default async function ProvidersModule({  city, state, params, Provider }
               <BiPhone /> {pro_phone}
             </Link> */}
           </div>
-          <div className='md:w-1/2 w-full md:block hidden'>
+          <div className='md:w-1/2 w-full md:block hidden '>
             <Link href={`/providers/${provider_slug}`} >  <Image src={Provider?.featuredImage?.node.mediaItemUrl} className='' alt="Feature Image" width={140} height={50} /></Link>
             <Get_Lootie src={animationData} />
           </div>

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 export const ProviderCardState = ({ item, type, offer, count }: any) => {
-    var features = item?.summery?.split(', ');
+    console.log("🚀 ~ ProviderCardState ~ item:", item)
+    var features = typeof item?.summery === 'string' ? item?.summery?.split(', ') : item?.summery?.features?.split(', ');
 
     return (
         <>
@@ -27,12 +28,12 @@ export const ProviderCardState = ({ item, type, offer, count }: any) => {
                                 )}
                             </p>
                             {type === "tv" ? (
-                                <>  <p className="tcd">{item.speed}  </p></>
+                                <>  <p className="tcd">{ typeof item?.summery === 'string' ? item.speed : item?.summery?.speed}  </p></>
                             ) : type === "internet-tv" ? (
-                                <> <p className="tcd">{item?.speed} Mbps  </p>
+                                <> <p className="tcd">{ typeof item?.summery === 'string' ? item?.speed : item?.summery?.speed} Mbps  </p>
                                 </>
                             ) : (
-                                <>   <p className="tcd">{item?.speed} Mbps </p></>
+                                <>   <p className="tcd">{typeof item?.summery === 'string' ? item?.speed : item?.summery?.speed} Mbps </p></>
                             )}
                         </div>
                     </div>
@@ -40,7 +41,7 @@ export const ProviderCardState = ({ item, type, offer, count }: any) => {
                         <div className="md:border-r border-r-0 md:border-b-0 border-b grid items-center justify-center p-5">
                             <div className="text-center">
                                 <p className="tch"> Channels</p>
-                                <p className="tcd"> {item?.channels}  </p>
+                                <p className="tcd"> {item?.summery?.summaryChannel}  </p>
                             </div>
                         </div>
                     }
