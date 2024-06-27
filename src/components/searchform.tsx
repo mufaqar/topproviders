@@ -3,6 +3,7 @@
 import { FaMagnifyingGlass } from 'react-icons/fa6'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useState } from 'react'
+import Loader from './provider/Loader';
 
 const query = `
 query zones($zipcode: String = "") {
@@ -75,7 +76,7 @@ const SearchForm = ({types, closeModal}:any) => {
 
   return (
     <>
-      {loader ? <div className='fixed z-50 inset-0 !w-full bg-black/60 flex items-center flex-col justify-center'><div className="custom-loader"></div></div> :
+      {loader ? <Loader/> :
         <form>
           <div className="relative flex items-center w-full m-auto serch_form">
             <FaMagnifyingGlass className="absolute ml-3" />
