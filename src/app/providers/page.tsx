@@ -89,7 +89,6 @@ async function Providers() {
                                 return (
                                     <>
                                         <ProviderBox key={idx} item={item} />
-
                                     </>
                                 )
                             })

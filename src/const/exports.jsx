@@ -131,6 +131,10 @@ export const NavLinks = [
     name: 'Contact Us',
     link: '/contact-us',
   },
+  {
+    name: 'Compare Providers',
+    link: '/comparission',
+  },
 ];
 
 export const Galler_Data = [

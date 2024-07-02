@@ -61,6 +61,31 @@ export const GET_ALL_PROVIDERS = gql`
           proPrice
           proSpeed
           features
+          servicesInfo {
+            internetServices {
+              features
+              speed
+              price
+              summaryFeatures
+              summarySpeed
+            }
+            internetTvBundles {
+              channels
+              features
+              speed
+              price
+              summaryChannel
+              summaryFeatures
+              summarySpeed
+            }
+            tvServices {
+              features
+              speed
+              price
+              summaryFeatures
+              summarySpeed
+            }
+          }
         }
       }
     }

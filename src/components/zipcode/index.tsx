@@ -14,6 +14,7 @@ import { useParams } from 'next/navigation'
 import { ProviderCardState } from '../provider/provider-card-state'
 
 function ZipCodeModule({ zipcode, city, state, allProviders, zones, type }: any) {
+console.log("🚀 ~ ZipCodeModule ~ allProviders:", allProviders)
 
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const query = useParams();
