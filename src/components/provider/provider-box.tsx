@@ -8,24 +8,15 @@ import { toast } from "react-toastify";
 
 
 export const ProviderBox = ({ item }: any) => {
-  const {comparesList, setCompareList} = useContext(GlobalContext)
+  const {ProviderOne, setProviderOne, ProviderTwo, setProviderTwo} = useContext(GlobalContext)
 
   const addToCompare = (props: any) => {
-    // check if the item already exists
-    const isExist = comparesList.find((i: any) => i?.title === props.title);
-  
-    if (isExist) {
-      toast.warn("Provider already exists in compare list!");
-    } else {
-      if (comparesList.length === 2) {
-        // Replace the last object with the latest props
-        setCompareList([...comparesList.slice(0, 1), props]);
-        toast("Provider replaced in compare list");
-      } else {
-        setCompareList([...comparesList, props]);
-        toast("Provider added in compare list");
-      }
-    }
+        if(ProviderOne){
+          setProviderTwo(props)
+        }else{
+          setProviderOne(props)
+        }
+        toast.info(`${props.title} Provider Added Into Compare List`)
   };
 
   
@@ -47,6 +38,7 @@ export const ProviderBox = ({ item }: any) => {
         </Link>
         <button
           onClick={() => addToCompare(item)}
+          title="compare"
           className="bg-[#FECE2F] hidden group-hover:block text-xl p-2 rounded-full absolute top-4 right-4 hover:scale-105"
         >
           <BiGitCompare />
