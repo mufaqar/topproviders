@@ -142,7 +142,7 @@ const Header = () => {
                                                     </li>
                                                 ))
                                             }
-                                        
+
                                         </ul>
                                     </div>
                                     <div className='col-span-2' >
@@ -184,20 +184,18 @@ const Header = () => {
                                                     </li>
                                                 ))
                                             }
-                                       
+
                                         </ul>
                                     </div>
                                     <div >
                                         <h2>Resources</h2>
                                         <ul>
-                                            
-                                        <li>
+
+                                            <li>
                                                 <Link href="/comparison">Compare providers</Link>
                                             </li>
-                                            <li>
-                                                <Link href="/">Check Internet Speed</Link>
-                                            </li>
-                                           
+
+
                                         </ul>
                                     </div>
                                 </div>
