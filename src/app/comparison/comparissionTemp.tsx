@@ -204,16 +204,16 @@ const ComparissionTemp = ({data}:any) => {
             </p>
           </div>
           <div className="border font-semibold md:text-xl">
-            <p className="p-3 px-4 flex items-center">Phone Number</p>
+            <p className="p-3 px-4 flex items-center">More About</p>
           </div>
           <div className="border">
             <p className="p-3 px-4 flex items-center">
-              {ProviderOne?.providersInfo?.proPhone}
+             Details Plans
             </p>
           </div>
           <div className="border">
             <p className="p-3 px-4 flex items-center">
-              {ProviderTwo?.providersInfo?.proPhone}
+            Details Plans
             </p>
           </div>
         </section>

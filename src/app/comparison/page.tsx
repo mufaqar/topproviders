@@ -3,6 +3,7 @@ import apolloClient from "@/config/client";
 import { GET_ALL_PROVIDERS } from "@/config/query";
 import React from "react";
 import ComparissionTemp from "./comparissionTemp";
+import PageHead from "@/components/metas/pagesmeta";
 
 async function getData(){
   const [providers] = await Promise.all([
@@ -19,6 +20,9 @@ const Comparission = async () => {
 
   return (
     <>
+
+<PageHead title="Comparison Between Providers" description="Comparison Between Providers" url="https://www.topproviders.net/contact-us" />
+
       <ComparissionTemp data={allProviders}/>
     </>
   );
