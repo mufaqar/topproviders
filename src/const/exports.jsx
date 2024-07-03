@@ -133,7 +133,7 @@ export const NavLinks = [
   },
   {
     name: 'Compare Providers',
-    link: '/comparission',
+    link: '/comparison',
   },
 ];
 

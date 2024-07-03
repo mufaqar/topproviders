@@ -190,6 +190,10 @@ const Header = () => {
                                     <div >
                                         <h2>Resources</h2>
                                         <ul>
+                                            
+                                        <li>
+                                                <Link href="/comparison">Compare providers</Link>
+                                            </li>
                                             <li>
                                                 <Link href="/">Check Internet Speed</Link>
                                             </li>
