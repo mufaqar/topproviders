@@ -20,7 +20,6 @@ const Comparission = async () => {
 
   return (
     <>
-
       <PageHead title="Comparison Between Providers" description="Comparison Between Providers" url="https://www.topproviders.net/comparison" />
       <ComparissionTemp data={allProviders} />
     </>
