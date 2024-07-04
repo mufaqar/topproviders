@@ -15,7 +15,7 @@ const PageHead = ({ title, description , url }: any) => {
             <meta property="og:url" content={url} />
             <meta property="og:site_name" content="topproviders.net" />
             <meta property="article:publisher" content="https://www.facebook.com/topproviders.net" />
-            <meta property="article:modified_time" content="2023-07-06T22:58:46+00:00" />
+            <meta property="article:modified_time" content="2024-04-06T22:58:46+00:00" />
             <meta property="og:image" content="https://www.topproviders.net/logo.png" />
             <meta property="og:image:width" content="254" />
             <meta property="og:image:height" content="56" />
