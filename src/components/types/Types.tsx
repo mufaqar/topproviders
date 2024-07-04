@@ -17,12 +17,6 @@ const Types = ({ providerType, service }: any) => {
   const { year, type, createData, topProvider } = useInternetHandler();
   const t: any = topProvider(allProviders);
 
-  let component = InternetPageDiffPath.find(
-    (path: any) => path.slug === type
-  )?.component;
-  if (component) {
-    return component;
-  }
 
   useEffect(() => {
     (async () => {
@@ -35,7 +29,14 @@ const Types = ({ providerType, service }: any) => {
       const res = providesByservice.data.serviceType?.allProviders?.nodes;
       setAllProviders(res);
     })();
-  }, []);
+  }, [providerType]);
+
+  let component = InternetPageDiffPath.find(
+    (path: any) => path.slug === type
+  )?.component;
+  if (component) {
+    return component;
+  }
 
   return (
     <section className="container mx-auto px-3 my-20">

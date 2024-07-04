@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchForm from './searchform'
+import Image from 'next/image'
 
 const Main = () => {
     return (
@@ -11,11 +12,10 @@ const Main = () => {
                     </h1>
                     <div className="w-full py-5 mt-6 bg-white border md:h-52 h-40 rounded-3xl flex">
                         <SearchForm />
-                        
                     </div>
                 </div>
                 <div className="sm:block hidden">
-                    <img src="/images/hso.webp" alt="Main Banner" className="ml-auto h-[485px] " />
+                    <Image src="/images/hso.webp" alt="Main Banner" className="ml-auto h-[485px]" width={800} height={485} />
                 </div>
             </div>
         </section>
