@@ -18,7 +18,7 @@ const query = `
 `;
 
 
-const SITE_URI = 'https://topproviders.net';
+const SITE_URI = 'https://www.topproviders.net';
 
 async function fetchData() {
   const response = await fetch(`https://topproviders.mufaqar.com/graphql`, {
@@ -55,7 +55,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/sitemaps/providers-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/providers.xml', sitemap);
 }
 
 generateSitemap();

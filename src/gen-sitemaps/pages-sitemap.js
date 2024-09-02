@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const SITE_URI = 'https://topproviders.net';
+const SITE_URI = 'https://www.topproviders.net';
 
 function getCurrentDateInISO8601Format() {
   const now = new Date();
@@ -63,7 +63,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/sitemaps/pages-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/pages.xml', sitemap);
 }
 
 generateSitemap();

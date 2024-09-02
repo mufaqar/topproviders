@@ -18,7 +18,7 @@ const query = `
 `;
 
 
-const SITE_URI = 'https://topproviders.net';
+const SITE_URI = 'https://www.topproviders.net';
 
 
 async function fetchData() {
@@ -52,7 +52,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  fs.writeFileSync('public/sitemaps/blog-sitemap.xml', sitemap);
+  fs.writeFileSync('public/sitemaps/blog.xml', sitemap);
 }
 
 generateSitemap();
