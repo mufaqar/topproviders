@@ -5,7 +5,6 @@ const PageHead = ({ title, description , url }: any) => {
     return (
         <Head>
             <title>{title}</title>
-            <meta name="robots" content="noindex"></meta>
             <meta name="description" content={description} />
             <link rel="canonical" href={url} />
             <meta property="og:locale" content="en_US" />
@@ -21,7 +20,7 @@ const PageHead = ({ title, description , url }: any) => {
             <meta property="og:image:height" content="56" />
             <meta property="og:image:type" content="image/png" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@cablemovers" />
+            <meta name="twitter:site" content="@topproviders" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
         </Head>
