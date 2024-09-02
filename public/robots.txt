@@ -6,12 +6,7 @@ Disallow: /comments/feed/
 Disallow: /feed/
 
 Sitemap: https://topproviders.net/sitemap.xml
-Sitemap: https://www.topproviders.net/pages-sitemap.xml
-Sitemap: https://www.topproviders.net/providers-sitemap.xml
-Sitemap: https://www.topproviders.net/blog-sitemap.xml
-Sitemap: https://www.topproviders.net/states-sitemap.xml
-Sitemap: https://www.topproviders.net/cities_1-sitemap.xml
-Sitemap: https://www.topproviders.net/cities_2-sitemap.xml
-Sitemap: https://www.topproviders.net/cities_3-sitemap.xml
-Sitemap: https://www.topproviders.net/cities_4-sitemap.xml
-Sitemap: https://www.topproviders.net/cities_5-sitemap.xml
+Sitemap: https://www.topproviders.net/pages.xml
+Sitemap: https://www.topproviders.net/providers.xml
+Sitemap: https://www.topproviders.net/blog.xml
+Sitemap: https://www.topproviders.net/states.xml
