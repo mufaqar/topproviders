@@ -1,6 +1,5 @@
 
 import Head from 'next/head';
-
 const PageHead = ({ title, description , url }: any) => {
     return (
         <Head>
