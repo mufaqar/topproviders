@@ -44,7 +44,7 @@ async function generateSitemap() {
       (item) => `
         <url>
           <loc>${SITE_URI}/blog/${item.slug}</loc>
-          <lastmod>${item.date}</lastmod>
+          <lastmod>${item.date}+00:00</lastmod>
           <priority>1.00</priority>
         </url>
       `
