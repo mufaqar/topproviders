@@ -1,14 +1,10 @@
 import PageBanner from '@/components/pageBanner'
-import SearchForm from '@/components/searchform'
 import React from 'react'
-import PageHead from '@/components/metas/pagesmeta';
 import Image from 'next/image';
 
 function About_Us() {
     return (
         <>
-            <PageHead title="About Us | Top Providers" description="Here at Top Providers, we make it easy to search, compare and order Internet and TV service providers. Call 833-592-0098 to learn more." url="https://www.topproviders.net/about-us" />
-
             <PageBanner title="About Us" />
             <section className="my-16">
                 <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 items-center">

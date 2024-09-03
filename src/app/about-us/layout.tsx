@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { openGraph, twitter } from "@/lib/seoMeta";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get in touch with Top Providers ",
+  title: "About Top Providers | compare and order Internet and TV service providers",
   description:
-    "Get in touch with Top Providers about customer service, ISP listings, advertising opportunities and more.",
+    "Here at Top Providers, we make it easy to search, compare and order Internet and TV service providers.",
   alternates: {
-    canonical: `https://www.topproviders.net/contact-us`,
+    canonical: `https://www.topproviders.net/about-us`,
   },
   twitter: { ...twitter },
   openGraph: { ...openGraph },

@@ -24,8 +24,7 @@ async function Blog() {
     return (
         <>
 
-            <PageHead title="Latest News, Reviews and Guides on Internet and TV Service Providers" description="Top Providers will keep you updated on latest news, reviews and guides on Internet and TV service providers." url="https://www.topproviders.net/blog" />
-
+            
             <PageBanner title="Blog" />
             <main className="py-16 max-w-screen-lg mx-auto">
 

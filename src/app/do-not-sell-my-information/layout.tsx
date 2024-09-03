@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { openGraph, twitter } from "@/lib/seoMeta";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get in touch with Top Providers ",
+  title: "Do Not Sell My Information | Top Providers ",
   description:
-    "Get in touch with Top Providers about customer service, ISP listings, advertising opportunities and more.",
+    "Do Not Sell My Information | Top Providers.",
   alternates: {
-    canonical: `https://www.topproviders.net/contact-us`,
+    canonical: `https://www.topproviders.net/do-not-sell-my-information`,
   },
   twitter: { ...twitter },
   openGraph: { ...openGraph },

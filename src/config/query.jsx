@@ -6,6 +6,7 @@ export const AllPosts = gql`
       edges {
         node {
           title
+          dateGmt
           content
           slug
           featuredImage {
