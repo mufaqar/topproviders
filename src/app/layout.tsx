@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <GlobalProvider>
-          <GoogleAnalytics measurementId="G-20JM8TWZFP" />
+          <GoogleAnalytics measurementId="G-CNJ4RQ8GYQ" />
           <Header />
           {children}
           <Footer />
