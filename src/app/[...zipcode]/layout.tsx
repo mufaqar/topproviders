@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import React from "react";
 import { openGraph, twitter } from "@/lib/seoMeta";
 import { fetchStateData } from "@/utils/fetchStateData";
+
 import { fetchCityData } from "@/utils/fetchCityData";
 import { fetchZipcodeData } from "@/utils/fetchZipcodeData";
 
@@ -10,6 +11,7 @@ export async function generateMetadata({ params }: any) {
   // SEO meta for states
   if (params?.zipcode.length === 2 && params?.zipcode?.[1].length === 2) {
     const stateResult: any = await fetchStateData(params?.zipcode);
+    console.log("🚀 ~ generateMetadata ~ stateResult:", stateResult)
     const type = params?.zipcode?.[0];
     const state = params?.zipcode?.[1];
 
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: any) {
     const city = params?.zipcode?.[2];
 
     return {
-      title: `${city}`,
+      title: `Top ${type} Service Provider in ${city}`,
       description: `...`,
       alternates: {
         canonical: `https://www.topproviders.net/${type}/${state}/${city}`,
@@ -48,12 +50,13 @@ export async function generateMetadata({ params }: any) {
     params?.zipcode?.[1].includes("zipcode-")
   ) {
     const zipcodeResult = await fetchZipcodeData(params?.zipcode);
+    console.log("🚀 ~ generateMetadata ~ zipcodeResult:", zipcodeResult)
     const type = params?.zipcode?.[0];
     const zipcode = params?.zipcode?.[1].replace("zipcode-", "");
 
     return {
-      title: `${zipcode}`,
-      description: `...`,
+      title: `Top ${type} Service Provider in ${zipcode}`,
+      description: `Top 7 ${type} Service Provider in ${zipcode} are DIRECTV , Spec Spectrum  `,
       alternates: {
         canonical: `https://www.topproviders.net/${type}/zipcode-${zipcode}`,
       },
