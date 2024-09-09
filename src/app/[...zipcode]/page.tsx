@@ -39,8 +39,7 @@ async function fetchZipcodeDataAsync(query: any) {
 export default async function Providers(props: any) {
   const query = props.params.zipcode;
 
-  const { StateData, allcities, state, stateNotFound } =
-    await fetchStateDataAsync(query);
+  const { StateData, allcities, state, stateNotFound } = await fetchStateDataAsync(query);
   const { CityData, cityNotFound } = await fetchCityDataAsync(query);
   const { ZipData, zipcode, type, zipNotFound } = await fetchZipcodeDataAsync(
     query
