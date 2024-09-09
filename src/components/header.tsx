@@ -11,7 +11,6 @@ const Header = () => {
     const [open, setOpen] = useState(false)
     const [subMenu, setSubMenu] = useState<any>(null)
 
-
     const [dropdown, setDropdown] = useState(null);
 
     const handleMenu = (id: any) => {
@@ -25,8 +24,6 @@ const Header = () => {
     const handleSubMenu = (id: any) => {
         setSubMenu(id)
     }
-
-
 
     return (
         <header className="h-auto shadow-sm py-2 !relative">
@@ -63,7 +60,7 @@ const Header = () => {
                                         <ul className='grid md:grid-cols-2'>
                                             {
                                                 internet?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
@@ -78,7 +75,7 @@ const Header = () => {
                                         <ul>
                                             {
                                                 tv?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
@@ -106,7 +103,7 @@ const Header = () => {
                                         <ul className='grid md:grid-cols-3'>
                                             {
                                                 Providers_Data?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={s.link} className='text-sm tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
@@ -135,7 +132,7 @@ const Header = () => {
                                         <ul className='grid md:grid-cols-2'>
                                             {
                                                 states?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={`/internet${s.slug}`} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
@@ -150,7 +147,7 @@ const Header = () => {
                                         <ul className='grid md:grid-cols-2'>
                                             {
                                                 Cities?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={`/internet${s.slug}`} className='text-sm tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
@@ -177,7 +174,7 @@ const Header = () => {
                                         <ul className='grid md:grid-cols-2'>
                                             {
                                                 resources?.map((s: any, id: number) => (
-                                                    <li key={id}>
+                                                    <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={s.slug} className='text-sm tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>

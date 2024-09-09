@@ -5,19 +5,23 @@ import { fetchStateData } from "@/utils/fetchStateData";
 
 import { fetchCityData } from "@/utils/fetchCityData";
 import { fetchZipcodeData } from "@/utils/fetchZipcodeData";
+import { genMetaDescription } from "@/utils/genMetaDescription";
 
 export async function generateMetadata({ params }: any) {
     
   // SEO meta for states
   if (params?.zipcode.length === 2 && params?.zipcode?.[1].length === 2) {
     const stateResult: any = await fetchStateData(params?.zipcode);
-    console.log("🚀 ~ generateMetadata ~ stateResult:", stateResult)
     const type = params?.zipcode?.[0];
     const state = params?.zipcode?.[1];
 
     return {
-      title: `${state}`,
-      description: `...`,
+      title: `Top ${stateResult?.StateData?.providers?.length} ${type} service provider in ${state}`,
+      description: genMetaDescription({
+        providers : stateResult?.StateData?.providers, 
+        state: state,
+        type,
+      }),
       alternates: {
         canonical: `https://www.topproviders.net/${type}/${state}`,
       },
@@ -34,8 +38,13 @@ export async function generateMetadata({ params }: any) {
     const city = params?.zipcode?.[2];
 
     return {
-      title: `Top ${type} Service Provider in ${city}`,
-      description: `...`,
+      title: `Top ${cityResult?.CityData?.providers.length} ${type} Service Provider in ${city}`,
+      description: genMetaDescription({
+        providers : cityResult?.CityData?.providers, 
+        city,
+        state,
+        type,
+      }),
       alternates: {
         canonical: `https://www.topproviders.net/${type}/${state}/${city}`,
       },
@@ -50,13 +59,16 @@ export async function generateMetadata({ params }: any) {
     params?.zipcode?.[1].includes("zipcode-")
   ) {
     const zipcodeResult = await fetchZipcodeData(params?.zipcode);
-    console.log("🚀 ~ generateMetadata ~ zipcodeResult:", zipcodeResult)
     const type = params?.zipcode?.[0];
     const zipcode = params?.zipcode?.[1].replace("zipcode-", "");
 
     return {
-      title: `Top ${type} Service Provider in ${zipcode}`,
-      description: `Top 7 ${type} Service Provider in ${zipcode} are DIRECTV , Spec Spectrum  `,
+      title: `Top ${zipcodeResult?.ZipData?.length} ${type} service provider in ${zipcode}`,
+      description: genMetaDescription({
+        providers : zipcodeResult?.ZipData, 
+        type,
+        zipcode: zipcode.replace("zipcode-", "")
+      }),
       alternates: {
         canonical: `https://www.topproviders.net/${type}/zipcode-${zipcode}`,
       },
