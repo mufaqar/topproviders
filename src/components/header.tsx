@@ -69,7 +69,7 @@ const Header = () => {
                                             {
                                                 stypes?.map((s: any, id: number) => (
                                                     <li key={id} onClick={()=>handleSubMenu(0)}>
-                                                        <Link href={s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
+                                                        <Link href={"/"+s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
                                                         </Link>
                                                     </li>
