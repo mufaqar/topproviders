@@ -54,7 +54,7 @@ const Types = ({ providerType, service }: any) => {
 
   return (
     <>
-      <section className="bg-[#6041BB] sticky top-0 shadow-xl z-50">
+      <section className="bg-[#6041BB] sticky top-0 shadow-xl z-[2]">
       <h1
         className={`sm:text-5xl text-white text-2xl container mx-auto px-3 ${
           isSticky ? "py-6" : "py-20"
