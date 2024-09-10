@@ -1,15 +1,18 @@
 "use client"
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoMdClose } from 'react-icons/io'
 import Link from 'next/link'
 import { FaChevronDown } from 'react-icons/fa6'
 import { Cities, internet, tv, providers, resources, states, tools, Providers_Data } from '@/const/exports'
+import apolloClient from '@/config/client'
+import { Providers_Services_Types } from '@/config/query'
 
 const Header = () => {
     const [open, setOpen] = useState(false)
     const [subMenu, setSubMenu] = useState<any>(null)
+    const [stypes, setStypes] = useState<any>()
 
     const [dropdown, setDropdown] = useState(null);
 
@@ -25,6 +28,16 @@ const Header = () => {
         setSubMenu(id)
     }
 
+    useEffect(()=>{
+        (async()=>{
+            const [providersServicesTypeRes] = await Promise.all([
+                apolloClient.query({ query: Providers_Services_Types }),
+            ]);
+            const providersServicesType = providersServicesTypeRes?.data?.serviceTypes?.nodes;
+            setStypes(providersServicesType)
+        })()
+    },[])
+
     return (
         <header className="h-auto shadow-sm py-2 !relative">
             <nav className="container mx-auto px-4 flex items-center justify-between ">
@@ -35,12 +48,7 @@ const Header = () => {
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={() => { setOpen(!open) }}>
-                        {
-                            open ?
-                                (<IoMdClose size={24} />)
-                                :
-                                (<RxHamburgerMenu size={24} />)
-                        }
+                        { open ? (<IoMdClose size={24} />) : (<RxHamburgerMenu size={24} />)}
                     </button>
                 </div>
                 <div className={`flex absolute md:relative items-center ${open ? 'top-[43.5px] left-0 shadow-lg right-0 p-6 w-full !bg-white z-40' : 'top-[-400%]'}`}>
@@ -56,10 +64,10 @@ const Header = () => {
                             <div className={`${subMenu === 1 ? 'block md:grid' : 'hidden'} mt-4 md:mt-0`}>
                                 <div id="1" className={`bg-white md:absolute transform md:-translate-x-1/2 md:left-1/2 relative md:w-[650px] w-full md:py-8 md:pt-5  pb-0 md:px-8 px-0 grid gap-5 z-50 md:shadow-[0_0_5px_3px_rgba(0,0,0,0.1)] grid-cols-2 md:grid-cols-3 `} >
                                     <div className='col-span-2' >
-                                        <h2 className='uppercase border-b-2 bottom-1'>Internet</h2>
-                                        <ul className='grid md:grid-cols-2'>
+                                        <h2 className='uppercase border-b-2 bottom-1'>Services Type</h2>
+                                        <ul className='grid md:grid-cols-2 mt-2'>
                                             {
-                                                internet?.map((s: any, id: number) => (
+                                                stypes?.map((s: any, id: number) => (
                                                     <li key={id} onClick={()=>handleSubMenu(0)}>
                                                         <Link href={s.slug} className='text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular'>
                                                             {s.name}
@@ -187,12 +195,9 @@ const Header = () => {
                                     <div >
                                         <h2>Resources</h2>
                                         <ul>
-
                                             <li>
                                                 <Link href="/comparison">Compare providers</Link>
                                             </li>
-
-
                                         </ul>
                                     </div>
                                 </div>

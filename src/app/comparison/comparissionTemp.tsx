@@ -2,7 +2,7 @@
 import PageBanner from "@/components/pageBanner";
 import { GlobalContext } from "@/context/globalContext";
 import Image from "next/image";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const ComparissionTemp = ({data}:any) => {
@@ -41,6 +41,11 @@ const ComparissionTemp = ({data}:any) => {
       setProviderTwo(p2)
       toast.info(`${p2.title} Selected`)
     }
+
+    useEffect(()=>{
+      setProviderOne(data?.[0])
+      setProviderTwo(data?.[1])
+    },[])
 
   return (
     <>

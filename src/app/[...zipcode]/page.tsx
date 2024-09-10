@@ -41,23 +41,19 @@ export default async function Providers(props: any) {
 
   const { StateData, allcities, state, stateNotFound } = await fetchStateDataAsync(query);
   const { CityData, cityNotFound } = await fetchCityDataAsync(query);
-  const { ZipData, zipcode, type, zipNotFound } = await fetchZipcodeDataAsync(
-    query
-  );
-
+  const { ZipData, zipcode, type, zipNotFound } = await fetchZipcodeDataAsync(query);
 
   // Types 
   if( 
-    query?.[1] === 'dsl' ||
-    query?.[1] === 'cable' ||
-    query?.[1] === 'fiber' ||
-    query?.[1] === 'fixed-wireless' ||
-    query?.[1] === 'satellite' ||
-    query?.[1] === 'streaming'
+    query?.[0] === 'dsl' ||
+    query?.[0] === 'cable' ||
+    query?.[0] === 'fiber' ||
+    query?.[0] === 'fixed-wireless' ||
+    query?.[0] === 'satellite' ||
+    query?.[0] === 'streaming'
   ){
-    return <Types providerType={query?.[1]} service={query?.[0]}/>
+    return <Types providerType={query?.[0]} service={query?.[0]}/>
   }
-  
 
 
   // State Module pages

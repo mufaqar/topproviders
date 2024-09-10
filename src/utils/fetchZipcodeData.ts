@@ -2,7 +2,6 @@ import apolloClient from "@/config/client";
 import { GET_PROVIDERS } from "@/config/query";
 
 export const fetchZipcodeData = async (query: any) => {
-  console.log("🚀 ~ fetchZipcodeData ~ query:", query)
 
   var type = query?.[0] || "";
   var zipcode = query?.[1]?.replace("zipcode-", "");

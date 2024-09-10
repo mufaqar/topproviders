@@ -43,6 +43,16 @@ export const GET_ZIPCODE = gql`
   }
 `;
 
+export const Providers_Services_Types = gql`
+  query GET_Services_type {
+  serviceTypes {
+    nodes {
+      slug
+      name
+    }
+  }
+}`;
+
 export const GET_ALL_PROVIDERS = gql`
   query GET_ALL_PROVIDERS {
     allProviders(
