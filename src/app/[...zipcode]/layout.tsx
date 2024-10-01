@@ -209,7 +209,7 @@ const ZipLayout = async (props:any) => {
   return (
     <>
       <head>
-        <Script dangerouslySetInnerHTML={{ __html: currenScript }} />
+        <Script id="item-script" dangerouslySetInnerHTML={{ __html: currenScript }} />
       </head>
       {props?.children}
     </>
