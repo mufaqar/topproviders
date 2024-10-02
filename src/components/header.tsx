@@ -120,52 +120,52 @@ const Header = () => {
                       }
 
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/cable"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular"
                         >
                           Cable
-                        </Link>
+                        </a>
                       </li>
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/dsl"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] AxiformaRegular"
                         >
                           DSL
-                        </Link>
+                        </a>
                       </li>
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/fiber"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] capitalize AxiformaRegular"
                         >
                           fiber
-                        </Link>
+                        </a>
                       </li>
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/fixed-wireless"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] capitalize AxiformaRegular"
                         >
                           fixed wireless
-                        </Link>
+                        </a>
                       </li>
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/satellite"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] capitalize AxiformaRegular"
                         >
                           satellite
-                        </Link>
+                        </a>
                       </li>
                       <li onClick={() => handleSubMenu(0)}>
-                        <Link
+                        <a
                           href={"https://www.topproviders.net/streaming"}
                           className="text-sm  tracking-normal text-[#4d4c4f] hover:text-[#FECE2F] capitalize AxiformaRegular"
                         >
                           streaming
-                        </Link>
+                        </a>
                       </li>
 
                     </ul>
