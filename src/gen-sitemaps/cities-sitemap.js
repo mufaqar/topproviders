@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const SITE_URI = 'https://topproviders.net';
+const SITE_URI = 'https://www.topproviders.net';
 const BASE_URL = 'https://topproviders.mufaqar.com/wp-json/custom/v1/states-cities';
 const POSTS_PER_PAGE = 10000; // Adjust if needed
 
