@@ -5,10 +5,11 @@ Disallow: /?s={search_term_string}
 Disallow: /comments/feed/
 Disallow: /feed/
 
-Sitemap: https://www.topproviders.net/sitemap.xml
-Sitemap: https://www.topproviders.net/pages.xml
-Sitemap: https://www.topproviders.net/types.xml
-Sitemap: https://www.topproviders.net/providers.xml
-Sitemap: https://www.topproviders.net/blog.xml
-Sitemap: https://www.topproviders.net/states.xml
+Sitemap: https://www.topproviders.net/sitemaps/sitemap.xml
+Sitemap: https://www.topproviders.net/sitemaps/pages.xml
+Sitemap: https://www.topproviders.net/sitemaps/types.xml
+Sitemap: https://www.topproviders.net/sitemaps/providers.xml
+Sitemap: https://www.topproviders.net/sitemaps/blog.xml
+Sitemap: https://www.topproviders.net/sitemaps/states.xml
+Sitemap: https://www.topproviders.net/sitemaps/cities.xml
 

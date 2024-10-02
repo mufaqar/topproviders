@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: any) {
   // SEO meta for City
   if (params?.zipcode.length === 3) {
     const cityResult: any = await fetchCityData(params?.zipcode);
+    console.log("🚀 ~ generateMetadata ~ cityResult:", cityResult)
     const type = params?.zipcode?.[0];
     const state = params?.zipcode?.[1];
     const city = params?.zipcode?.[2];

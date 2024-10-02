@@ -16,7 +16,7 @@
 	<sitemap>
 		<loc>https://www.topproviders.net/sitemaps/states.xml</loc>
 	</sitemap>
-	<!-- <sitemap>
+	<sitemap>
 		<loc>https://www.topproviders.net/sitemaps/cities.xml</loc>
-	</sitemap> -->
+	</sitemap>
 </urlset>

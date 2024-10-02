@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "sitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/types-sitemap.js",
-    "codesitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/states-internet-sitemap.js && node ./src/gen-sitemaps/states-tv-sitemap.js && node ./src/gen-sitemaps/states-internet-tv-sitemap.js"
+    "codesitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/states-internet-sitemap.js && node ./src/gen-sitemaps/states-tv-sitemap.js && node ./src/gen-sitemaps/states-internet-tv-sitemap.js",
+    "city-sitemap": "node ./src/gen-sitemaps/cities-sitemap.js"
   },
   "dependencies": {
     "@apollo/client": "^3.10.3",
