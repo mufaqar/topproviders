@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run sitemap && npm run codesitemap && npm run city-sitemap",
     "start": "next start",
     "lint": "next lint",
+    "all-sitemap" : "npm run sitemap && npm run codesitemap && npm run city-sitemap",
     "sitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/types-sitemap.js",
     "codesitemap": "node ./src/gen-sitemaps/blogs-sitemap.js && node ./src/gen-sitemaps/pages-sitemap.js && node ./src/gen-sitemaps/providers-sitemap.js && node ./src/gen-sitemaps/states-internet-sitemap.js && node ./src/gen-sitemaps/states-tv-sitemap.js && node ./src/gen-sitemaps/states-internet-tv-sitemap.js",
     "city-sitemap": "node ./src/gen-sitemaps/cities-sitemap.js"

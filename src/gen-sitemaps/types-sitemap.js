@@ -14,6 +14,19 @@ const query = `
 
 const SITE_URI = 'https://www.topproviders.net';
 
+function getCurrentDateInISO8601Format() {
+  const now = new Date();
+  const year = now.getUTCFullYear();
+  const month = String(now.getUTCMonth() + 1).padStart(2, '0'); // Month is zero-based, so add 1 and pad to two digits
+  const day = String(now.getUTCDate()).padStart(2, '0');
+  const hours = String(now.getUTCHours()).padStart(2, '0');
+  const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+  const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+  const iso8601Date = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}+00:00`;
+  return iso8601Date;
+}
+
+const currentDateInISO8601Format = getCurrentDateInISO8601Format();
 
 async function fetchData() {
   const response = await fetch(`https://topproviders.mufaqar.com/graphql`, {
@@ -38,7 +51,7 @@ async function generateSitemap() {
       (item) => `
         <url>
           <loc>${SITE_URI}/${item.slug}</loc>
-          <lastmod>${item.date}+00:00</lastmod>
+          <lastmod>${currentDateInISO8601Format}</lastmod>
           <priority>1.00</priority>
         </url>`
     ).join('')}
