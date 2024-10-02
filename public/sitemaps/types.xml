@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+          <loc>https://www.topproviders.net/cable</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+        <url>
+          <loc>https://www.topproviders.net/dsl</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+        <url>
+          <loc>https://www.topproviders.net/fiber</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+        <url>
+          <loc>https://www.topproviders.net/fixed-wireless</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+        <url>
+          <loc>https://www.topproviders.net/satellite</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+        <url>
+          <loc>https://www.topproviders.net/streaming</loc>
+          <lastmod>undefined+00:00</lastmod>
+          <priority>1.00</priority>
+        </url>
+    </urlset>
+  
