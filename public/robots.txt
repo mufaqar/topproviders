@@ -7,6 +7,8 @@ Disallow: /feed/
 
 Sitemap: https://www.topproviders.net/sitemap.xml
 Sitemap: https://www.topproviders.net/pages.xml
+Sitemap: https://www.topproviders.net/types.xml
 Sitemap: https://www.topproviders.net/providers.xml
 Sitemap: https://www.topproviders.net/blog.xml
 Sitemap: https://www.topproviders.net/states.xml
+

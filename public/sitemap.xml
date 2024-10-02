@@ -5,6 +5,9 @@
 		<loc>https://www.topproviders.net/sitemaps/pages.xml</loc>
 	</sitemap>
 	<sitemap>
+		<loc>https://www.topproviders.net/sitemaps/types.xml</loc>
+	</sitemap>
+	<sitemap>
 		<loc>https://www.topproviders.net/sitemaps/providers.xml</loc>
 	</sitemap>
 	<sitemap>
